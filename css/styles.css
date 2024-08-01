@@ -2112,7 +2112,6 @@
 .project .project-h2 h2 {
   font-size: 8.75vw;
   margin: 5rem 0 3rem;
-  margin-top: ;
   line-height: 1.05em;
 }
 
@@ -10513,7 +10512,9 @@ figure a {
 
 img {
   width: 100%;
+  height: 100%;
 }
+
 
 header .header-description {
   margin: 2em 0 4em 0;
