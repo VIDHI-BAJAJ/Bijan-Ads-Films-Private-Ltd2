@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="10px" height="15px" viewBox="0 0 10 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>arrow</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="hire-us@2x" transform="translate(-529.000000, -2310.000000)" fill="#FFFFFF">
+            <g id="section-3" transform="translate(-23.000000, 1814.000000)">
+                <g id="horizontal" transform="translate(415.000000, 473.000000)">
+                    <g id="budget-horiz">
+                        <g id="ui">
+                            <g id="icon" transform="translate(103.000000, 0.000000)">
+                                <g transform="translate(17.000000, 23.000000)" id="arrow">
+                                    <path d="M16.4538878,9.93088854 L24.2781746,9.93088854 L24.2781746,12.2781746 L16.4538878,12.2781746 L14.1066017,12.2781746 L14.1066017,2.10660172 L16.4538878,2.10660172 L16.4538878,9.93088854 Z" transform="translate(19.192388, 7.192388) scale(-1, -1) rotate(-315.000000) translate(-19.192388, -7.192388) "></path>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
