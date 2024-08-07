@@ -9937,7 +9937,6 @@ body {
   font-family: "Montserrat", "Open Sans", sans-serif;
   font-size: 1.25em;
   line-height: 1.66em;
-  color: #1b1a25;
   position: relative;
   overflow-x: hidden;
 }
@@ -10617,8 +10616,8 @@ header .header-description {
 
 .grid-wrap {
   width: 76%;
-  margin: 20px auto;
-  padding: 20px 12%;
+  margin: 0px auto;
+  padding: 0px 12%;
 }
 
 .svg-shape {
@@ -13710,8 +13709,8 @@ header .header-description {
     float: left;
     width: 100%;
     display: block;
-}body {
-    background: #000;
+}
+body {
     padding: 0;
     margin: 0;
 	font-family:Montserrat;
