@@ -10617,8 +10617,8 @@ header .header-description {
 
 .grid-wrap {
   width: 76%;
-  margin: 0 auto;
-  padding: 0 12%;
+  margin: 20px auto;
+  padding: 20px 12%;
 }
 
 .svg-shape {

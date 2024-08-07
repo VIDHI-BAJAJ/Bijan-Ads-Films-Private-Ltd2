@@ -198,76 +198,76 @@
     <style>
         .test {
             width: 100%;
-            background: #000;
+            background: #fff;
             font-size: 14px;
-            color: #000;
             margin: 0;
             padding: 0;
-          }
-          
-          .swiper-container {
+        }
+        
+        .swiper-container {
             width: 100%;
             color: #000;
             padding-top: 50px;
             padding-bottom: 50px;
-          }
-          
-          .swiper-slide {
+        }
+        
+        .swiper-slide {
             background-position: center;
             background-size: cover;
             background: #fff;
-            max-width: 300px; 
-            height: 100%; /* Responsive height */
-          }
-          
-          .swiper-slide p {
+            max-width: 250px; 
+            height: auto; /* Responsive height */
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+        }
+        
+        .swiper-slide p {
             color: #000;
             margin: 20px;
             margin-top: 40px;
-          }
-          
-          .swiper-slide h4 {
+        }
+        
+        .swiper-slide h4 {
             color: #000;
             margin-top: 15px;
-            margin-left: auto; /* Center horizontally */
-            margin-right: auto; /* Center horizontally */
-            text-align: center; /* Center text */
-          }
-          
-          /* Media Queries */
-          
-          /* For tablets and small screens */
-          @media (max-width: 768px) {
+            text-align: center;
+        }
+        
+        /* Media Queries */
+        
+        /* For tablets and small screens */
+        @media (max-width: 768px) {
             .swiper-slide {
-              width: 80%; /* Adjust width for tablets */
-              max-width: 100%;
+                width: 80%;
+                max-width: 100%;
             }
-          
+        
             .swiper-slide p {
-              margin-top: 50px; /* Adjust top margin */
+                margin-top: 50px;
             }
-          
+        
             .swiper-slide h4 {
-              margin-top: 10px;
+                margin-top: 10px;
             }
-          }
-          
-          /* For mobile devices */
-          @media (max-width: 480px) {
+        }
+        
+        /* For mobile devices */
+        @media (max-width: 480px) {
             .swiper-slide {
-              width: 90%; /* Adjust width for mobile */
-              max-width: 100%;
+                width: 90%;
+                max-width: 100%;
             }
-          
+        
             .swiper-slide p {
-              margin-top: 30px; /* Adjust top margin */
+                margin-top: 30px;
             }
-          
+        
             .swiper-slide h4 {
-              margin-top: 5px;
+                margin-top: 5px;
             }
-          }
-          
+        }
+        
     </style>
 
 </head>
@@ -307,62 +307,8 @@
                     <span style="background-color: white;"></span>
                     <span style="background-color: white;"></span>
                 </div>
-                <!-- <div class="contact-icon">
-                    <a href="#">
-                        <img src="#" alt="Hire us">
-                    </a>
-                </div> -->
             </div>
-            <!-- <div class="slidenav">
-                <div class="nav-img">
-                    <svg width="100%" height="100%" preserveAspectRatio="none" viewBox="0 0 1440 800">
-                        <defs>
-                            <path class="nav-scene" id="nav-img-mask"
-                                d="M 1066,436 C 1051,543.8 973.2,656.2 873.6,700.1 756.6,751.7 600.9,725 492.4,657.4 431.5,619.5 387.5,546.9 376.7,476 360.3,368.3 377.9,229.2 462.5,160.5 589.5,57.34 815.4,42.24 952.4,131.7 1044,190.8 1081,328.8 1066,436 Z"
-                                pathdata:id="M 1041,450.4 C 1023,547.7 992.8,667.7 905.7,714.5 793.1,775 639,728.7 524.5,671.8 453.3,636.4 382.2,575.4 360.2,499 329.7,393 344.6,249.2 426,174.9 568.6,44.66 851.1,-8.71 1002,111.8 1091,182.7 1061,338.6 1041,450.4 Z;M 1066,436 C 1051,543.8 976.5,664.5 873.6,700.1 761,739.1 636.4,655.8 529.5,603.1 441.6,559.8 325.8,520.1 293.8,427.5 263.1,338.4 294.5,213.4 368.2,154.8 520.7,33.48 790.1,23.76 952.4,131.7 1043,191.7 1081,328.8 1066,436 Z;M 1066,436 C 1053,531.1 930.7,580.1 842.2,617.2 734,662.7 598.4,707.8 492.4,657.4 427.6,626.6 387.5,546.9 376.7,476 360.3,368.3 376.9,227.9 462.5,160.5 567.6,77.69 749.9,37.5 863.8,148.8 947.6,230.7 1082,320.1 1066,436 Z" />
-                        </defs>
-                        <clipPath id="navCircleClip">
-                            <use xlink:href="#nav-img-mask" />
-                        </clipPath>
-                        <image data-img-clip="Home" clip-path="url(#navCircleClip)" width="1440" height="800"
-                            xlink:href="img/navigation/work.jpg" class="selected"></image>
-                        <image data-img-clip="Team" clip-path="url(#navCircleClip)" width="1440" height="800"
-                            xlink:href="img/navigation/team.jpg"></image>
-                        <image data-img-clip="Contact" clip-path="url(#navCircleClip)" width="1440" height="800"
-                            xlink:href="img/navigation/contact.jpg"></image>
-                        
-                        <use xlink:href="#nav-img-mask" />
-                    </svg>
-                </div>
-                <nav class="navlinks-wrap">
-                    <ul class="navlinks">
-                        <li  class="selected">
-                            <div class="link-mask-wrap">
-                                <a class="link" data-nav-link="Home" href="index-2.html">
-                                    <div class="link-mask"><span>Home<i>.</i></span></div>
-                                    <span class="fake-link"></span>
-                                </a>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="link-mask-wrap">
-                                <a class="link" data-nav-link="Team" href="team.html">
-                                    <div class="link-mask"><span>Team<i>.</i></span></div>
-                                    <span class="fake-link"></span>
-                                </a>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="link-mask-wrap">
-                                <a class="link" data-nav-link="Contact" href="contact.html">
-                                    <div class="link-mask"><span>Contact<i>.</i></span></div>
-                                    <span class="fake-link"></span>
-                                </a>
-                            </div>
-                        </li>
-                    </ul>
-                </nav>
-            </div> -->
+           
         </div>
         <div class="scene-element scene_element--fadeinup">
             <div class="grid-wrap" style="position: relative;">
@@ -386,29 +332,11 @@
                         <span style="background-color: white;"></span>
                     </div>
                     <div class="shape-morph wow fadeIn">
-                        <!-- <svg width="100%" height="100%" preserveAspectRatio="none" viewBox="0 0 1440 800">
-                            <defs>
-                                <path class="scene" id="img-mask"
-                                    d="M 1066,436 C 1051,543.8 973.2,656.2 873.6,700.1 756.6,751.7 600.9,725 492.4,657.4 431.5,619.5 387.5,546.9 376.7,476 360.3,368.3 377.9,229.2 462.5,160.5 589.5,57.34 815.4,42.24 952.4,131.7 1044,190.8 1081,328.8 1066,436 Z"
-                                    pathdata:id="M 1041,450.4 C 1023,547.7 992.8,667.7 905.7,714.5 793.1,775 639,728.7 524.5,671.8 453.3,636.4 382.2,575.4 360.2,499 329.7,393 344.6,249.2 426,174.9 568.6,44.66 851.1,-8.71 1002,111.8 1091,182.7 1061,338.6 1041,450.4 Z;M 1066,436 C 1051,543.8 976.5,664.5 873.6,700.1 761,739.1 636.4,655.8 529.5,603.1 441.6,559.8 325.8,520.1 293.8,427.5 263.1,338.4 294.5,213.4 368.2,154.8 520.7,33.48 790.1,23.76 952.4,131.7 1043,191.7 1081,328.8 1066,436 Z;M 1066,436 C 1053,531.1 930.7,580.1 842.2,617.2 734,662.7 598.4,707.8 492.4,657.4 427.6,626.6 387.5,546.9 376.7,476 360.3,368.3 376.9,227.9 462.5,160.5 567.6,77.69 749.9,37.5 863.8,148.8 947.6,230.7 1082,320.1 1066,436 Z" />
-                            </defs>
-                            <clipPath id="circleClip">
-                                <use xlink:href="#img-mask" />
-                            </clipPath>
-                            <image clip-path="url(#circleClip)" width="1440" height="800"
-                                xlink:href="img/navigation/studio.jpg"></image>
-                            <use xlink:href="#img-mask" />
-                        </svg> -->
+                     
                     </div>
                 </header>
                 <div id="studio-intro">
-                    <!-- <div class="row middle-xs">
-                        <div class="col-xs-12 col-md-10 col-md-offset-1 col-lg-offset-2">
-                            <h3 class="wow textLeft" style="color: white;">We take your growth problems seriously.</h3>
-                            <p class="wow big textLeft" style="color: white;">We are a tech-first D2C Growth Studio. With 4+ years of experience in branding, our crew works very closely with brands to execute customised growth strategies because each brand is unique for us and so is our solution. Brands love us because we don't burn, we innovate to grow sustainably.
-                            </p>
-                        </div>
-                    </div> -->
+                    
                 </div>
             </div>   
             <div id="approach" style="background-color: white;">
@@ -596,24 +524,8 @@
                                                 <li>Motion Graphics</li>
                                             </ul>
                                         </div>
-                                        <!-- <div class="col-xs-12 col-sm-6 col-md-3 col-lg-6">
-                                            <h4 class="wow textLeft">Growth</h4>
-                                            <ul class="wow textLeft">
-                                                <li>Omnichannel Customer Engagement</li>
-                                                <li>Influencer Marketing</li>
-                                                <li>Marketing Strategy</li>
-                                                <li>Email Marketing</li>
-                                                <li>WhatsApp Marketing</li>
-                                            </ul>
-                                        </div> -->
-                                        <!-- <div class="col-xs-12 col-sm-6 col-md-3 col-lg-6">
-                                            <h4 class="wow textLeft">Software Development</h4>
-                                            <ul class="wow textLeft">
-                                                <li>Websites</li>
-                                                <li>Apps</li>
-                                                <li>Plugins and Customizations</li>
-                                            </ul>
-                                        </div> -->
+                                     
+                                        
                                     </div>
                                     <div class="row">
                                         <div class="col-md-6 col-md-offset-6 col-sm-6 col-sm-offset-6">
@@ -666,155 +578,17 @@
                                     </div>
                                 </div>
                             </div>
-                            <!-- <div class="row culture-wrap">
-                                <div class="svg-shape">
-                                    <div class="wow fadeIn" data-wow-delay=".3s">
-                                        <svg width="100%" height="100%" viewBox="0 0 120 120">
-                                          <g fill="none" fill-rule="evenodd" stroke="currentColor" stroke-width="10" class="line">
-                                            <path stroke-dashoffset="-500" stroke-dasharray="1000" d="M20,60a40,40 0 1,0 80,0a40,40 0 1,0 -80,0"></path>
-                                          </g>
-                                        </svg>
-                                    </div>
-                                </div>
-                                <div class="col-xs-12">
-                                    <div class="row">
-                                        <div class="col-xs-12">
-                                            <div class="box">
-                                                <h2 class="wrapped-heading">
-                                                    <span class="wow textLeft">cul</span><span class="wow textLeft" data-wow-delay=".2s">ture<b>.</b></span>
-                                                </h2>
-                                            </div>
-                                        </div>
-                                        <div class="col-xs-12 col-md-8 col-md-offset-2">
-                                            <p class="box wow textLeft big" data-wow-delay=".2s">Design, develop, deploy, optimize and iterate. That’s not just our process, it’s our philosophy. We've got big-business backgrounds with twice the ground speed and much better jokes. Technology is advancing exponentially, so why would we stay still?</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div> -->
+                
                         </div>
                     </div>
 
                 </div>
-                <!-- CULTURE -->
-                <!-- <div id="culture" style="background-color: #101010;">
-                    <div class="grid-wrap" style="background-color: #101010;">
-                        <div class="row middle-xs">
-                            <div class="col-xs-12 col-md-4">
-                                <div class="box">
-                                    <figure class="culture-img">
-                                        <div class="wow imgMatrix" data-wow-delay=".15s">
-                                            <img class="wow fadeIn" data-wow-delay=".45s"
-                                                src="img/studio/ritvik.jpg" alt="An awesome picture">
-                                        </div>
-                                    </figure>
-                                </div>
-                            </div>
-                            <div class="col-xs-12 col-md-7 col-md-offset-1">
-                                <div class="box">
-                                    <figure class="culture-img">
-                                        <div class="wow imgMatrix" data-wow-delay=".2s">
-                                            <img class="wow fadeIn" data-wow-delay=".5s"
-                                                src="img/studio/whiteboard-session-1x1.jpg" alt="An awesome picture">
-                                        </div>
-                                    </figure>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div> -->
+                
+               
             </div>
-
-            <!-- APPROACH -->
-            <!-- <div id="approach" style="background-color: #101010;">
-                <div class="svg-shape" style="color: white;">
-                    <div class="wow fadeIn" data-wow-delay=".3s">
-                        <svg width="100%" height="100%" viewBox="0 0 120 120">
-                            <g fill="none" fill-rule="evenodd" stroke="currentColor" stroke-width="10" class="line">
-                                <path stroke-dashoffset="-500" stroke-dasharray="1000"
-                                    d="M20,60a40,40 0 1,0 80,0a40,40 0 1,0 -80,0"></path>
-                            </g>
-                        </svg>
-                    </div>
-                </div>
-                <div class="grid-wrap">
-                    <div class="offset-top-sm">
-                        <div class="row">
-                            <div class="col-xs-12">
-                                <div class="row bottom-xs">
-                                    <div class="col-xs-12 col-sm-6 col-md-5 col-lg-4">
-                                        <div class="box">
-                                            <h2 class="wrapped-heading" style="color: white;">
-                                                <span class="wow textLeft">app</span>
-                                                <span class="wow textLeft" data-wow-delay=".1s">roa</span>
-                                                <span class="wow textLeft" data-wow-delay=".2s">ch<b style="background-color: white;">.</b></span>
-                                            </h2>
-                                        </div>
-                                    </div>
-                                    <div class="approach-desc col-xs-12 col-md-6 col-md-offset-1 col-lg-offset-2" style="color: white;">
-                                        <p class="box wow textLeft" data-wow-delay=".15s">
-                                            We truly invest ourselves in the brands we work with. We follow a simple approach to stitch a customized solution because your brand is unique for us and so is our solution for you.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-sm-12 col-md-4">
-                                <div class="approach-item center wow textLeft">
-                                    <span class="approach-icon">
-                                        <img data-alt-src="img/approach/icon-design.gif"
-                                            src="img/approach/icon-design.png" alt="Talk">
-                                    </span>
-                                    <div class="approach-title">
-                                        <h3><sup>01</sup>Strategize</h3>
-                                    </div>
-                                    <div class="approach-content">
-                                        <p>We sit with the founders and understand the vision of the brand, to align our marketing strategies accordingly. This includes understanding the low level business details, customer journey and the existing solutions in the market. We then meticulously craft a unique marketing plan aimed at achieving exponential growth.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-12 col-md-4">
-                                <div class="approach-item center wow textLeft">
-                                    <span class="approach-icon">
-                                        <img data-alt-src="img/approach/icon-develop.gif"
-                                            src="img/approach/icon-develop.png" alt="Talk">
-                                    </span>
-                                    <div class="approach-title">
-                                        <h3><sup>02</sup>Execute</h3>
-                                    </div>
-                                    <div class="approach-content">
-                                        <p>We execute it right. Our marketing team works with the brand's in-house team, to ensure every aspect is executed well.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-12 col-md-4">
-                                <div class="approach-item center wow textLeft">
-                                    <span class="approach-icon">
-                                        <img data-alt-src="img/approach/icon-deploy.gif"
-                                            src="img/approach/icon-deploy.png" alt="Talk">
-                                    </span>
-                                    <div class="approach-title">
-                                        <h3><sup>03</sup>Optimize</h3>
-                                    </div>
-                                    <div class="approach-content">
-                                        <p>We continuously analyze and enhance our marketing strategies, as we get more data on their performance.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
-
-            <!-- <br>
-            <br> -->
-      <!-- testimonal -->
-
+  
             <!-- clients -->
-            <div id="clients" style="padding-top: 2rem;">
+            <div id="clients" style="padding-top: 2rem">
                 <div class="grid-wrap">
                     <div>
                         <div class="row center-xs">
@@ -855,7 +629,7 @@
                     </div>
                 </div>
             </div>
-testimonal
+
 
 
         <!-- cardscroll -->
@@ -881,7 +655,49 @@ testimonal
               <span onclick="slideLeft()" class="btn"></span>
             </div>
           </div>
-        <!-- endcardscroll -->
+                <div id="clients" style="padding-top: 2rem; padding-bottom: 5rem;">
+                        <div>
+                            <div class="row center-xs">
+                                <header class="col-sm-12">
+                                    <h2 class="wow textLeft">testimonals<b style="background-color: black;">.</b></h2>
+                                </header>
+                            </div>
+                            <div class= "test">
+                                <div class="swiper-container">
+                                  <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <p>"Working with Bijan Ads & Films was a game-changer for our brand. Their creative vision and attention to detail helped us stand out in a crowded market. Highly recommend their services!"</p>
+                                        <p>Hello</p>
+                                        <h4> ---Vidhi Bajaj</h4>
+                                    </div>
+                                    <div class="swiper-slide">
+                                      <p>"Bijan Ads & Films brought our brand story to life in a way we never imagined. Their team is professional, talented, and truly understands the power of visual storytelling."</p>
+                                      <h4> ---Vidhi Bajaj</h4>
+                                    </div>
+                                    <div class="swiper-slide">
+                                      <p>"The team at Bijan Ads & Films exceeded our expectations. Their innovative approach to branding and motion graphics helped us connect with our audience on a deeper level. Exceptional work!"</p>
+                                      <h4> ---Vidhi Bajaj</h4>
+                                    </div>
+                                    <div class="swiper-slide">
+                                      <p>"Bijan Ads & Films transformed our marketing strategy with their stunning visuals and creative concepts. Their work has been instrumental in boosting our brand's visibility and engagement."</p>
+                                      <h4> ---Vidhi Bajaj</h4>
+                                    </div>
+                                    <div class="swiper-slide">
+                                      <p>"The team at Bijan Ads & Films is incredibly talented and professional. They took our vision and turned it into a powerful brand narrative that resonates with our audience. We couldn't be happier with the results."</p>
+                                       <h4> ---Vidhi Bajaj</h4>
+                                    </div>
+                                    <div class="swiper-slide">
+                                      <p>"From start to finish, Bijan Ads & Films delivered exceptional service and creativity. Their unique approach to branding helped us establish a strong, memorable identity in the market."</p>
+                                      <h4> ---Vidhi Bajaj</h4>
+                                    </div>
+                                  </div>
+                                  <div class="swiper-pagination"></div>
+                                </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+    
             <!-- APPLY -->
             <!-- <div id="bottom-cta"> -->
                 <!-- <figure class="apply-img">
