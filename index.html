@@ -28,6 +28,7 @@
 
     <link href="css/styles.css" rel="stylesheet" type="text/css" />
 
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <style>
         #container {
             height: 100vh;
@@ -134,6 +135,8 @@
           
           }
     </style>
+
+    
 <style>
         .con {
             margin: 0;
@@ -192,7 +195,80 @@
         }
     </style>
 
-
+    <style>
+        .test {
+            width: 100%;
+            background: #000;
+            font-size: 14px;
+            color: #000;
+            margin: 0;
+            padding: 0;
+          }
+          
+          .swiper-container {
+            width: 100%;
+            color: #000;
+            padding-top: 50px;
+            padding-bottom: 50px;
+          }
+          
+          .swiper-slide {
+            background-position: center;
+            background-size: cover;
+            background: #fff;
+            max-width: 300px; 
+            height: 100%; /* Responsive height */
+          }
+          
+          .swiper-slide p {
+            color: #000;
+            margin: 20px;
+            margin-top: 40px;
+          }
+          
+          .swiper-slide h4 {
+            color: #000;
+            margin-top: 15px;
+            margin-left: auto; /* Center horizontally */
+            margin-right: auto; /* Center horizontally */
+            text-align: center; /* Center text */
+          }
+          
+          /* Media Queries */
+          
+          /* For tablets and small screens */
+          @media (max-width: 768px) {
+            .swiper-slide {
+              width: 80%; /* Adjust width for tablets */
+              max-width: 100%;
+            }
+          
+            .swiper-slide p {
+              margin-top: 50px; /* Adjust top margin */
+            }
+          
+            .swiper-slide h4 {
+              margin-top: 10px;
+            }
+          }
+          
+          /* For mobile devices */
+          @media (max-width: 480px) {
+            .swiper-slide {
+              width: 90%; /* Adjust width for mobile */
+              max-width: 100%;
+            }
+          
+            .swiper-slide p {
+              margin-top: 30px; /* Adjust top margin */
+            }
+          
+            .swiper-slide h4 {
+              margin-top: 5px;
+            }
+          }
+          
+    </style>
 
 </head>
 
@@ -335,8 +411,8 @@
                     </div> -->
                 </div>
             </div>   
-            <div id="approach" style="background-color: #CA054D;">
-                <div class="svg-shape" style="color: white;">
+            <div id="approach" style="background-color: white;">
+                <div class="svg-shape" style="color: black;">
                     <div class="wow fadeIn" data-wow-delay=".3s">
                         <svg width="100%" height="100%" viewBox="0 0 120 120">
                             <g fill="none" fill-rule="evenodd" stroke="currentColor" stroke-width="10" class="line">
@@ -353,14 +429,14 @@
                                 <div class="row bottom-xs">
                                     <div class="col-xs-12 col-sm-6 col-md-5 col-lg-4">
                                         <div class="box">
-                                            <h2 class="wrapped-heading" style="color: white;">
+                                            <h2 class="wrapped-heading" style="color: black;">
                                                 <span class="wow textLeft">app</span>
                                                 <span class="wow textLeft" data-wow-delay=".1s">roa</span>
                                                 <span class="wow textLeft" data-wow-delay=".2s">ch<b style="background-color: white;">.</b></span>
                                             </h2>
                                         </div>
                                     </div>
-                                    <div class="approach-desc col-xs-12 col-md-6 col-md-offset-1 col-lg-offset-2" style="color: white;">
+                                    <div class="approach-desc col-xs-12 col-md-6 col-md-offset-1 col-lg-offset-2" style="color: black;">
                                         <p class="box wow textLeft" data-wow-delay=".15s">
                                             At Bijan ADS & Films PVT Limited, we pride ourselves on partnering with only a select few brands to create exceptional advertising and film content. Our Crew Club is an exclusive community of brands that benefit from our premium services and unparalleled expertise.
                                         </p>
@@ -398,8 +474,8 @@
                             <div class="col-sm-12 col-md-4">
                                 <div class="approach-item center wow textLeft">
                                     <span class="approach-icon">
-                                        <img data-alt-src="img/approach/icon-design.gif"
-                                            src="img/approach/icon-design.png" alt="Talk">
+                                        <img data-alt-src="./images/document.gif"
+                                            src="./images/document.png" alt="Talk">
                                     </span>
                                     <div class="approach-title">
                                         <h3><sup>01</sup>Apply</h3>
@@ -413,8 +489,8 @@
                             <div class="col-sm-12 col-md-4">
                                 <div class="approach-item center wow textLeft">
                                     <span class="approach-icon">
-                                        <img data-alt-src="img/approach/icon-develop.gif"
-                                            src="img/approach/icon-develop.png" alt="Talk">
+                                        <img data-alt-src="images/labour-day.gif"
+                                            src="./images/labour-day.png" alt="Talk">
                                     </span>
                                     <div class="approach-title">
                                         <h3><sup>02</sup>Strategise</h3>
@@ -428,8 +504,8 @@
                             <div class="col-sm-12 col-md-4">
                                 <div class="approach-item center wow textLeft">
                                     <span class="approach-icon">
-                                        <img data-alt-src="img/approach/icon-deploy.gif"
-                                            src="img/approach/icon-deploy.png" alt="Talk">
+                                        <img data-alt-src="./images/growth.gif"
+                                            src="./images/growth.png" alt="Talk">
                                     </span>
                                     <div class="approach-title">
                                         <h3><sup>03</sup>Grow</h3>
@@ -735,6 +811,7 @@
 
             <!-- <br>
             <br> -->
+      <!-- testimonal -->
 
             <!-- clients -->
             <div id="clients" style="padding-top: 2rem;">
@@ -778,6 +855,8 @@
                     </div>
                 </div>
             </div>
+testimonal
+
 
         <!-- cardscroll -->
         <div id="container">
@@ -921,6 +1000,7 @@
     <script src="js/js-dist.js"></script>
     <!-- COPY THIS EVERYWHERE -->
     <div class="form-response js-form-response text-center"></div>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
     <!-- scripts -->
     <script>
@@ -1016,6 +1096,23 @@ function slideLeft() {
         buttons[0].classList.remove('inactive');
     }
 };
+     </script>
+     <script>
+        var swiper = new Swiper('.swiper-container', {
+            pagination: '.swiper-pagination',
+            effect: 'coverflow',
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: 'auto',
+            coverflow: {
+              rotate: 50,
+              stretch: 0,
+              depth: 100,
+              modifier: 1,
+              slideShadows : true
+            },
+            loop: true
+          });
      </script>
 </body>
 </html>
