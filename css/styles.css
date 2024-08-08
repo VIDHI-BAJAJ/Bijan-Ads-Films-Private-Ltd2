@@ -14517,3 +14517,74 @@ div#clients {
   from {opacity: .4} 
   to {opacity: 1}
 }
+
+/* .testimonails */
+.test {
+    width: 100%;
+    background: #fff;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+}
+
+.swiper-container {
+    width: 100%;
+    color: #000;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    background: #fff;
+    max-width: 250px; 
+    height: auto; /* Responsive height */
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.swiper-slide p {
+    margin: 20px;
+    margin-top: 40px;
+}
+
+.swiper-slide h4 {
+    margin-top: 15px;
+    text-align: center;
+}
+
+/* Media Queries */
+
+/* For tablets and small screens */
+@media (max-width: 768px) {
+    .swiper-slide {
+        width: 80%;
+        max-width: 100%;
+    }
+
+    .swiper-slide p {
+        margin-top: 50px;
+    }
+
+    .swiper-slide h4 {
+        margin-top: 10px;
+    }
+}
+
+/* For mobile devices */
+@media (max-width: 480px) {
+    .swiper-slide {
+        width: 90%;
+        max-width: 100%;
+    }
+
+    .swiper-slide p {
+        margin-top: 30px;
+    }
+
+    .swiper-slide h4 {
+        margin-top: 5px;
+    }
+}
