@@ -11205,6 +11205,22 @@ header .header-description {
 #services h3,
 #services h4 {
   color: #fff;
+  font-size: 4.5rem;
+}
+#services .serv{
+margin-left: 480px;
+}
+#services .ser p{
+  margin-left: 80px;
+  margin-top: 10px;
+}
+@media only screen and (max-width: 400px) {
+#services .ser p{
+  margin-left: 12px;
+}
+#services .serv{
+  margin-left: 12px;
+}
 }
 
 #services h4 {
