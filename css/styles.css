@@ -250,7 +250,6 @@
 
 .link-mask > span {
   position: absolute;
-  color: #fff;
   -webkit-transform: translateX(102%);
   -ms-transform: translateX(102%);
   transform: translateX(102%);
@@ -555,7 +554,6 @@
   height: 100vh;
   position: fixed;
   background-color: transparent;
-  color: #fff;
   overflow: visible;
 }
 
@@ -8950,6 +8948,7 @@ table {
   flex-wrap: wrap;
   margin-right: -0.5rem;
   margin-left: -0.5rem;
+  margin-top: 12px;
 }
 
 .row.reverse {
@@ -9571,6 +9570,8 @@ table {
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
     max-width: 50%;
+    margin-left: 60px;
+    margin-top: 15px;
   }
   .col-md-7 {
     -ms-flex-preferred-size: 58.33333333%;
@@ -9730,9 +9731,9 @@ table {
     padding-right: 0.5rem;
     padding-left: 0.5rem;
   }
-  .box {
+  /* .box {
     padding-bottom: 120px;
-  }
+  } */
   .offset-top {
     padding-top: 230px;
   }
@@ -11207,7 +11208,6 @@ header .header-description {
 }
 
 #services h4 {
-  margin-top: 2.25em;
   font-size: 1.75em;
 }
 
@@ -12106,7 +12106,7 @@ header .header-description {
     font-size: 3em !important;
   }
   body h2 {
-    font-size: 6em;
+    font-size: 5em;
   }
   .portfolio-wrapper .portfolio li {
     font-size: 5.25em;
@@ -12197,7 +12197,6 @@ header .header-description {
     /* font-size: 10em */
   }
   #services h4 {
-    margin-top: 4em;
     font-size: 1.25em;
   }
   #services ul {
@@ -12632,7 +12631,7 @@ header .header-description {
     font-size: 8.3em;
   }
   #clients h2 {
-    font-size: 5em;
+    font-size: 4em;
   }
   #clients li {
     position: relative;
@@ -14545,14 +14544,15 @@ div#clients {
     border-radius: 10px;
 }
 
-.swiper-slide p {
-    margin: 20px;
-    margin-top: 40px;
+.swiper-slide .sliders span p{
+    margin-top: 4px;
+    color: black;
 }
 
-.swiper-slide h4 {
-    margin-top: 15px;
+.swiper-slide h5 span {
+    margin-top: 2px;
     text-align: center;
+    color: black;
 }
 
 /* Media Queries */
@@ -14564,11 +14564,11 @@ div#clients {
         max-width: 100%;
     }
 
-    .swiper-slide p {
+    .swiper-slide .sliders span p{
         margin-top: 50px;
     }
 
-    .swiper-slide h4 {
+    .swiper-slide h5 span {
         margin-top: 10px;
     }
 }
@@ -14580,11 +14580,11 @@ div#clients {
         max-width: 100%;
     }
 
-    .swiper-slide p {
+    .swiper-slide .sliders span p {
         margin-top: 30px;
     }
 
-    .swiper-slide h4 {
+    .swiper-slide h5 span {
         margin-top: 5px;
     }
 }

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.con{
+    background-color: black;
+    height: 100vh;
+    width: 100%;
+}
+.comb-1 {
+    display: grid;
+    justify-content: center;
+    padding-top: 120px;
+}
+
+.comb-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.item, .item2 {
+    width: 100px;
+    height: 100px; /* Adjusted height for perfect hexagon tiling */
+    background-color: #fff;
+    clip-path: polygon(50% -50%,100% 50%,50% 150%,0 50%);
+    margin: -5px 0; /* Negative margin to remove gaps between hexagons */
+}
+
+.item2:nth-child(1) {
+    transform: translateY(22px);
+     margin-right: -10px;
+}
+
+.item2:nth-child(2) {
+    transform: translateY(-35px);
+    margin-right:60px;
+}
+
+.item2:nth-child(3) {
+    transform: translateY(-35px);
+  margin-left:15px;
+  /* Half of the height to align properly */
+}
+
+.item2:nth-child(4) {
+    transform: translateY(20px);
+  margin-left:-12px;
+  
+}  
+.comb-3{
+    display: grid;
+    justify-content: center;
+    margin:-75px;
+}
+h5{
+    color: #fff;
+}
+p{
+    color: #fff;
+}
+.line{
+    color: #fff;
+   
+}
+.line:nth-child(1){
+    margin-top: 80px;
+    margin-left: 370px;
+    margin-right: 850px;
+    transform: rotate(60deg);
+}
+.line:nth-child(2){
+    margin-top: 27px;
+    margin-left: 420px;
+    margin-right: 790px;
+}
+.line:nth-child(3){
+    margin-left: 495px;
+    margin-right: 700px;
+    margin-top: -10px;
+}
+.line:nth-child(4){
+    margin-left: 550px;
+    margin-right: 650px;
+    margin-top: -10px;
+}
+.line:nth-child(5){
+    margin-left: 630px;
+    margin-right: 550px;
+    margin-top: -10px;
+}
+.line:nth-child(6){
+    margin-left: 730px;
+    margin-right: 450px;
+    margin-top: -10px;
+  
+}
+.line:nth-child(7){
+    margin-left: 830px;
+    margin-right: 350px;
+    margin-top: -10px;
+  
+}
+.line:nth-child(8){
+    margin-left: 930px;
+    margin-right: 250px;
+    margin-top: -10px;
+   
+}
+
+     </style>
+</head>
+<body>
+    <div class="con">
+        <div class="honey"> 
+            <div class ="honey1"> 
+                <h5>Development</h5>
+                <p>The process begins with an idea, concept, or story that the filmmaker wants to bring to life.</p>
+                  <img src="./images/arrow-up.png"/>
+                  <div class="comb-1">
+                    <div class="item">
+                    </div>
+                </div>
+                </div>
+                <div class="comb-2">
+                    <div class="item2"></div>
+                    <div class="item2"></div>
+                    <div class="item2"></div>
+                    <div class="item2"></div>
+                </div>
+                <div class="comb-3">
+                    <div class="item"></div>
+                </div>
+                <div>
+                    <div class="line"><hr/></div>
+                    <div class="line"><hr/></div>
+                    <div class="line"><hr/></div>
+                    <div class="line"><hr/></div>
+                    <div class="line"><hr/></div>
+                    <div class="line"><hr/></div>
+                    <div class="line"><hr/></div>
+                    <div class="line"><hr/></div>
+                </div>
+    </div>
+    </div>
+</body>
+</html>
