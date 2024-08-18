@@ -11211,9 +11211,18 @@ header .header-description {
 margin-left: 480px;
 }
 #services .ser p{
-  margin-left: 80px;
+  margin-left: 200px;
   margin-top: 10px;
 }
+@media only screen and (max-width: 920px) {
+  #services .ser p{
+    margin-left: 12px;
+  }
+  #services .serv {
+    margin-left: 40px;
+  }
+  }
+  
 @media only screen and (max-width: 400px) {
 #services .ser p{
   margin-left: 12px;
