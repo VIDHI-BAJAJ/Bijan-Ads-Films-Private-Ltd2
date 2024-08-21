@@ -12417,6 +12417,7 @@ margin-left: 480px;
     margin: 0;
     position: relative;
     display: inline-block;
+
   }
   #approach h3:after,
   #approach h3:before {
@@ -13263,6 +13264,7 @@ margin-left: 480px;
     margin: 0 0 0.8em 0;
     position: relative;
     display: inline-block;
+    font-size: 2.5rem;
   }
   #approach h3:after,
   #approach h3:before {
@@ -14137,6 +14139,7 @@ li.flipkart img {
     bottom: 0;
 }
 
+
 .testmo_user img {
     width: 55px;
     border-radius: 30px;
@@ -14560,13 +14563,13 @@ div#clients {
 
 .swiper-slide .sliders span p{
     margin-top: 4px;
-    color: #000;
+    color: black;
 }
 
 .swiper-slide h5 span {
     margin-top: 2px;
     text-align: center;
-    color: #000;
+    color: black;
 }
 
 /* Media Queries */

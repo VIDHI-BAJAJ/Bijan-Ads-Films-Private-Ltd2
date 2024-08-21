@@ -250,182 +250,18 @@
                 fill: black;
             }
         }
-        .mouses{
-            background-color: black;
-            width: 100%;
+        @media only screen and (max-width: 880px) {
+            #logomain {
+                margin-top: 30px;
+                height: 85px;
+                left: 50%;
+                transform: translate(-50%, -50%);
         }
-        .mouse_scroll {
-            display: block;
-            margin: 0 auto;
-            width: 24px;
-            height: 100px;
-            padding-bottom: 10px;
-        }
-        
-        
-        .m_scroll_arrows
-        {
-          display: block;
-          width: 5px;
-          height: 5px;
-          -ms-transform: rotate(45deg); /* IE 9 */
-          -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
-          transform: rotate(45deg);
-           
-          border-right: 2px solid white;
-          border-bottom: 2px solid white;
-          margin: 0 0 3px 4px;
-          
-          width: 16px;
-          height: 16px;
-        }
-        
-        
-        .unu
-        {
-          margin-top: 1px;
-        }
-        
-        .unu, .doi, .trei
-        {
-            -webkit-animation: mouse-scroll 1s infinite;
-            -moz-animation: mouse-scroll 1s infinite;
-            animation: mouse-scroll 1s infinite;
-          
-        }
-        
-        .unu
-        {
-          -webkit-animation-delay: .1s;
-          -moz-animation-delay: .1s;
-          -webkit-animation-direction: alternate;
-          
-          animation-direction: alternate;
-          animation-delay: alternate;
-        }
-        
-        .doi
-        {
-          -webkit-animation-delay: .2s;
-          -moz-animation-delay: .2s;
-          -webkit-animation-direction: alternate;
-          
-          animation-delay: .2s;
-          animation-direction: alternate;
-          
-          margin-top: -6px;
-        }
-        
-        .trei
-        {
-          -webkit-animation-delay: .3s;
-          -moz-animation-delay: .3s;
-          -webkit-animation-direction: alternate;
-          
-          animation-delay: .3s;
-          animation-direction: alternate;
-          
-          
-          margin-top: -6px;
-        }
-        
-        .mouse {
-          height: 42px;
-          width: 24px;
-          border-radius: 14px;
-          transform: none;
-          border: 2px solid white;
-          top: 170px;
-        }
-        
-        .wheel {
-          height: 5px;
-          width: 2px;
-          display: block;
-          margin: 5px auto;
-          background: white;
-          position: relative;
-          
-          height: 4px;
-          width: 4px;
-          border: 2px solid #fff;
-          -webkit-border-radius: 8px;
-                  border-radius: 8px;
-        }
-        
-        .wheel {
-          -webkit-animation: mouse-wheel 0.6s linear infinite;
-          -moz-animation: mouse-wheel 0.6s linear infinite;
-          animation: mouse-wheel 0.6s linear infinite;
-        }
-        
-        @-webkit-keyframes mouse-wheel{
-           0% {
-            opacity: 1;
-            -webkit-transform: translateY(0);
-            -ms-transform: translateY(0);
-            transform: translateY(0);
-          }
-        
-          100% {
-            opacity: 0;
-            -webkit-transform: translateY(6px);
-            -ms-transform: translateY(6px);
-            transform: translateY(6px);
-          }
-        }
-        @-moz-keyframes mouse-wheel {
-          0% { top: 1px; }
-          25% { top: 2px; }
-          50% { top: 3px;}
-          75% { top: 2px;}
-          100% { top: 1px;}
-        }
-        @-o-keyframes mouse-wheel {
-        
-           0% { top: 1px; }
-          25% { top: 2px; }
-          50% { top: 3px;}
-          75% { top: 2px;}
-          100% { top: 1px;}
-        }
-        @keyframes mouse-wheel {
-        
-           0% { top: 1px; }
-          25% { top: 2px; }
-          50% { top: 3px;}
-          75% { top: 2px;}
-          100% { top: 1px;}
-        }
-        
-        @-webkit-keyframes mouse-scroll {
-        
-          0%   { opacity: 0;}
-          50%  { opacity: .5;}
-          100% { opacity: 1;}
-        }
-        @-moz-keyframes mouse-scroll {
-        
-          0%   { opacity: 0; }
-          50%  { opacity: .5; }
-          100% { opacity: 1; }
-        }
-        @-o-keyframes mouse-scroll {
-        
-          0%   { opacity: 0; }
-          50%  { opacity: .5; }
-          100% { opacity: 1; }
-        }
-        @keyframes mouse-scroll {
-        
-          0%   { opacity: 0; }
-          50%  { opacity: .5; }
-          100% { opacity: 1; }
-        }
+    }
         @media only screen and (max-width: 768px) {
             /* Adjust for tablets and small screens */
             .logomenu {
-                height: 60vh;
+                height: 40vh;
             }
         
             #logomain {
@@ -439,11 +275,48 @@
                 height: 80px;
             }
         }
-        
-        @media only screen and (max-width: 480px) {
+    
+        @media only screen and (max-width: 600px) {
             /* Adjust for mobile screens */
             .logomenu {
-                height: 50vh;
+                height: 40vh;
+            }
+        
+            #logomain {
+               height: 60px;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+        @media only screen and (max-width: 500px) {
+            /* Adjust for mobile screens */
+            .logomenu {
+                height: 40vh;
+            }
+        
+            #logomain {
+               height: 50px;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+        @media only screen and (max-width: 420px) {
+            /* Adjust for mobile screens */
+            .logomenu {
+                height: 40vh;
+            }
+        
+            #logomain {
+               height: 45px;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+        
+        @media only screen and (max-width: 380px) {
+            /* Adjust for mobile screens */
+            .logomenu {
+                height: 40vh;
             }
         
             #logomain {
@@ -451,23 +324,7 @@
                 left: 50%;
                 transform: translate(-50%, -50%);
             }
-        
-            .mouse_scroll {
-                width: 18px;
-                height: 70px;
-            }
-        
-            .m_scroll_arrows {
-                width: 12px;
-                height: 12px;
-            }
-        
-            .mouse {
-                height: 35px;
-                width: 20px;
-            }
         }
-        
     </style>
     
 <style>
@@ -520,7 +377,6 @@
                 width: 40vw;
             }
         }
-
         @media (max-width: 480px) {
             .logos {
                 width: 50vw;
@@ -630,11 +486,7 @@
       
       /* .section SECTION
       –––––––––––––––––––––––––––––––––––––––––––––––––– */
-      
-      .section {
-        padding: 15px 0;
-      }
-      
+    
       .section .container {
         width: 90%;
         max-width: 1200px;
@@ -809,6 +661,97 @@
         color: white;
         background:black;
       }
+      /* MEDIA QUERIES FOR RESPONSIVENESS */
+@media screen and (max-width: 1200px) {
+    .timeline {
+      grid-template-columns: 280px auto;
+    }
+    
+    .timeline::before {
+      left: 300px;
+    }
+  }
+  
+  @media screen and (max-width: 992px) {
+    .section h1 {
+      font-size: 2rem;
+    }
+    
+    .timeline {
+      grid-template-columns: 1fr;
+      padding: 0;
+    }
+    
+    .timeline::before,
+    .timeline::after {
+      display: none;
+    }
+    
+    .timeline .info {
+      display: none;
+    }
+    .timeline ol li {
+        position: relative;
+        display: inline-block;
+        list-style-type: none;
+        width: 160px;
+        height: 5px;
+        background: black;
+        scroll-snap-align: start;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .section h1 {
+      font-size: 1.8rem;
+    }
+    
+    .timeline ol {
+      padding: 280px 0;
+      flex: auto;
+      flex-direction: row;
+    }
+    
+    .timeline ol li {
+      width: 140px;
+    }
+    
+    .timeline ol li div {
+      width: 240px;
+    }
+    
+    .timeline time {
+      font-size: 1.2rem;
+    }
+  }
+  
+  @media screen and (max-width: 576px) {
+ 
+    
+    .section h1 {
+      font-size: 1.5rem;
+    }
+    
+    .section h2 {
+      font-size: 1.1rem;
+    }
+    
+    .timeline ol {
+      padding: 350px 0;
+    }
+    
+    .timeline ol li {
+      width: 120px;
+    }
+    
+    .timeline ol li div {
+      width: 200px;
+    }
+    
+    .timeline time {
+      font-size: 1rem;
+    }
+  }
       
       /* GENERAL MEDIA QUERIES
       –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -870,10 +813,10 @@
                     <span style="background-color: black;"></span>
                 </div>
             </div>  
+       
         </div>
         </div> 
      <div>
- <div class="gradient-overlay"></div>
       <div class="logomenu">   
                 <svg id="logomain" width="1000" height="100" viewBox="0 0 374 44" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M19.9006 28.6304L19.9006 28.6304L19.9034 28.6259C20.6757 27.396 21.06 26.0231 21.06 24.52C21.06 23.3232 20.7889 22.193 20.2472 21.1364C19.7351 20.0855 19.0222 19.2011 18.1109 18.4884C17.6232 18.0955 17.1032 17.7829 16.5518 17.5518C17.4923 17.0667 18.2924 16.4299 18.9453 15.6387C19.938 14.4414 20.42 12.9495 20.42 11.2C20.42 9.77883 20.0634 8.48597 19.344 7.335C18.6181 6.17359 17.5377 5.27448 16.1327 4.62746C14.7164 3.94849 13.0263 3.62 11.08 3.62H1.08H0.580002V4.12V32V32.5H1.08H11.48C13.4029 32.5 15.0922 32.1704 16.5329 31.4924L16.5329 31.4924L16.5367 31.4906C17.9935 30.7902 19.1232 29.8396 19.9006 28.6304ZM14.9962 20.901L14.9961 20.901L15.0018 20.9057C15.9388 21.6787 16.42 22.7426 16.42 24.16C16.42 25.5568 15.9611 26.5938 15.0779 27.3375C14.1831 28.091 12.8989 28.5 11.16 28.5H5.22V19.66H11.04C12.7416 19.66 14.0426 20.0904 14.9962 20.901ZM10.84 15.66H5.22V7.62H10.76C12.4514 7.62 13.6641 8.00493 14.4746 8.69962C15.2799 9.38987 15.7 10.3483 15.7 11.64C15.7 12.9317 15.2799 13.8901 14.4746 14.5804C13.6617 15.2772 12.4735 15.66 10.84 15.66Z" stroke="black"/>
@@ -910,7 +853,7 @@
                 </div> -->
             </div>   
             <div id="approach" style="background-color: white;">
-                <!-- <div class="svg-shape" style="color: black;">
+                <div class="svg-shape" style="color: black;">
                     <div class="wow fadeIn" data-wow-delay=".3s">
                         <svg width="100%" height="100%" viewBox="0 0 120 120">
                             <g fill="none" fill-rule="evenodd" stroke="currentColor" stroke-width="10" class="line">
@@ -950,10 +893,10 @@
                                             src="./images/approach/document.png" alt="Talk">
                                     </span>
                                     <div class="approach-title">
-                                        <h3><sup>01</sup>Apply</h3>
+                                        <h3><sup>01</sup> Apply</h3>
                                     </div>
                                     <div class="approach-content">
-                                        <p>Fill a quick form and our team will get in touch with you. 
+                                        <p>Complete a short form, and our team will reach out to you.
                                         </p>
                                     </div>
                                 </div>
@@ -961,14 +904,14 @@
                             <div class="col-sm-12 col-md-4">
                                 <div class="approach-item center wow textLeft">
                                     <span class="approach-icon">
-                                        <img data-alt-src="images/approach/labour-day.gif"
+                                        <img data-alt-src="./images/approach/labour-day.gif"
                                             src="./images/approach/labour-day.png" alt="Talk">
                                     </span>
                                     <div class="approach-title">
-                                        <h3><sup>02</sup>Strategise</h3>
+                                        <h3><sup>02</sup>Strategize</h3>
                                     </div>
                                     <div class="approach-content">
-                                        <p>Once your brand is shortlisted our crew will work very closely with your team to prepare a detailed strategy.
+                                        <p>If your project is selected, our team will work closely with you to develop a comprehensive strategy. 
                                         </p>
                                     </div>
                                 </div>
@@ -976,23 +919,69 @@
                             <div class="col-sm-12 col-md-4">
                                 <div class="approach-item center wow textLeft">
                                     <span class="approach-icon">
-                                        <img data-alt-src="./images/approach/growth.gif"
-                                            src="./images/approach/growth.png" alt="Talk">
+                                        <img data-alt-src="./images/approach/strategic-consulting.gif"
+                                            src="./images/approach/strategic-consulting.png" alt="Talk">
                                     </span>
                                     <div class="approach-title">
-                                        <h3><sup>03</sup>Grow</h3>
+                                        <h3><sup>03</sup>Execute</h3>
                                     </div>
                                     <div class="approach-content">
-                                        <p>We will work together and make the dream happen. 
+                                        <p>Once the strategy is in place, we'll begin executing the plan to ensure the film achieves top 6 status.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-4">
+                                <div class="approach-item center wow textLeft">
+                                    <span class="approach-icon">
+                                        <img data-alt-src="./images/approach/review.gif"
+                                            src="./images/approach/review.png" alt="Talk">
+                                    </span>
+                                    <div class="approach-title">
+                                        <h3><sup>04</sup>Review</h3>
+                                    </div>
+                                    <div class="approach-content">
+                                        <p>We continuously monitor and review the progress to make adjustments as needed.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-4">
+                                <div class="approach-item center wow textLeft">
+                                    <span class="approach-icon">
+                                        <img data-alt-src="images/approach/promotion.gif"
+                                            src="./images/approach/promotion.png" alt="Talk">
+                                    </span>
+                                    <div class="approach-title">
+                                        <h3><sup>05</sup>Promote</h3>
+                                    </div>
+                                    <div class="approach-content">
+                                        <p>Our marketing experts will promote the film across various platforms to maximize its reach.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-4">
+                                <div class="approach-item center wow textLeft">
+                                    <span class="approach-icon">
+                                        <img data-alt-src="./images/approach/award.gif"
+                                            src="./images/approach/award.png" alt="Talk">
+                                    </span>
+                                    <div class="approach-title">
+                                        <h3><sup>06</sup>Succeed</h3>
+                                    </div>
+                                    <div class="approach-content">
+                                        <p>Achieve the goal of making your film one of the top 6, with full support from our team.
                                         </p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div> -->
+                </div>
+            
                 <!-- <img src="./images/BannerImages/WhatsApp Image 2024-08-12 at 21.50.13_0774b6b7.jpg"> -->
-                <div class="times">
+                <!-- <div class="times">
                     <section class="section intro">
                         <div class="container">
                         </div>
@@ -1046,8 +1035,9 @@
                       <li></li>
                     </ol>
                   </section>
-                  </div>
-            </div>
+                  </div> -->
+            
+                </div>
             <!-- Services Wrap -->
             <div class="dark">
                 <div id="services">
@@ -1258,7 +1248,7 @@
               <span onclick="slideLeft()" class="btn"></span>
             </div>
           </div>
-                <div id="clients" style="padding-top: 2rem; padding-bottom: 5rem;">
+                <!-- <div id="clients" style="padding-top: 2rem; padding-bottom: 5rem;">
                         <div>
                             <div class="row center-xs">
                                 <header class="col-sm-12">
@@ -1302,7 +1292,7 @@
                     </div>
                     </div>
             </div>
-        </div>
+        </div> -->
     </div>   
     </div>  
             <!-- APPLY -->
