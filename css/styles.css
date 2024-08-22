@@ -12437,7 +12437,7 @@ margin-left: 480px;
     position: absolute;
     width: 12px;
     height: 3px;
-    background-color: black;
+    background-color: #000;
   }
   #approach h3:after {
     top: 50%;
