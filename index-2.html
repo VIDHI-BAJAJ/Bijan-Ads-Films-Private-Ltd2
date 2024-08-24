@@ -2,33 +2,787 @@
 <html lang="en" class="no-js">
 
 
-<!-- Mirrored from www.supercrew.club/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 01 Aug 2024 14:32:08 GMT -->
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+ <meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
 <head>
     <meta charset="utf-8">
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
-    <title>Supercrew | Growth, Marketing, and Tech for D2C Brands</title>
+    <title>
+        Bijan ADS & Films</title>
     <meta name="description"
-    content="Supercrew provides growth, marketing, and tech solutions that help brands achieve exponential growth" />
+    content="Bijan Ads & Films offers innovative marketing, creative, and production solutions that empower brands to captivate audiences and drive remarkable growth. We specialize in crafting compelling visual stories that elevate your brand's presence and impact in the market." />
     <meta name="keywords"
-    content="web, website, user experience, ux, designer, graphics, product, user interface, ui, developer, css, html, jQuery, mobile, developer, business, mobile app, SEO, Digital Marketing, Google Ads, Meta Ads, Facebook Ads, Instagram Ads, Snapchat Ads, Quora Ads, Twitter Ads, LinkedIn Ads, Customer Engagement, Social media handling, Production, Media" />
-    <meta name="author" content="Supercrew" />
-
-    <meta property="og:title" content="Supercrew | Growth, Marketing, and Tech for D2C Brands">
-    <meta property="og:description" content="Supercrew provides growth, marketing, and tech solutions that help brands achieve exponential growth">
-    <meta property="og:image" content="img/Supercrew-square.png">
+    content="Creative Direction, Video Production, Brand Storytelling, Motion Graphics, Cinematography, Post-Production, Scriptwriting, Visual Effects, Commercials, Corporate Films, Documentaries, Product Videos, Music Videos, Ad Films, Content Creation, Digital Marketing, Social Media Campaigns, Influencer Marketing, Media Strategy, Brand Activation, Customer Engagement, Event Coverage, Animation, Editing, Sound Design, Color Grading, and Distribution." />
+    <meta name="author" content="Bijan ADS & Films" />
+    <meta property="og:title" content="Bijan Ads & Films | Creative, Marketing, and Production for Exceptional Brands">
+    <meta property="og:description" content="Bijan Ads & Films offers innovative marketing, creative, and production solutions that empower brands to captivate audiences and drive remarkable growth. We specialize in crafting compelling visual stories that elevate your brand's presence and impact in the market.">
+    <meta property="og:image" content="images/Logo/Logo- Bijan.png">
     <meta property="og:url" content="index.html">
 
-    <link rel="icon" href="img/Supercrew-short.png" type="image/icon type" sizes="64x64">
+    <link rel="icon" href="./images/Logo/Logo- Bijan.png" type="image/icon type" sizes="64x64">
     <link href="https://fonts.googleapis.com/css?family=Lato:400|Montserrat:500,600,800" rel="stylesheet">
     <link href="css/custom.css" rel="stylesheet" type="text/css" />
 
     <link href="css/styles.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <style>
+        #container {
+            height: 90vh;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            margin-top: 10px;
+            background-image: url("./images/Bijan\ Ads\ &\ Films.png");
+            display: grid ;
+            place-items: center
+          }
+          
+          #slider-container {
+            height: 550px;
+            width: 100%;
+            max-width: 1400px;
+            position: relative;
+            overflow: hidden;
+          }
+          
+          #slider-container .btn {
+            position: absolute;
+            top: calc(50% - 30px);
+            height: 30px;
+            width: 30px;
+            border-left: 4px solid black;
+            border-top: 4px solid black;
+          }
+          
+          #slider-container .btn:hover {
+            transform: scale(1.2);
+          }
+          
+          #slider-container .btn.inactive {
+            border-color: rgb(153, 121, 126)
+          }
+          
+          #slider-container .btn:first-of-type {
+            transform: rotate(-45deg);
+            left: 40px;
+          }
+          
+          #slider-container .btn:last-of-type {
+            transform: rotate(135deg);
+            right: 40px;
+          }
+          
+          #slider-container #sliders {
+            display: flex;
+            width: 900%;
+            height: 90%; 
+            transition: all .5s;
+          }
+          
+          #slider-container #sliders .slides {
+            height: 75%;
+            margin: auto 10px;
+            background-color: #fff;
+            box-shadow: 2px 2px 4px 2px black, -2px -2px 4px 2px black;
+            display: grid;
+            place-items: center;
+          }
+          
+          #slider-container #sliders .slides span {
+            color: white;
+            height: 100%;
+            width: 100%;
+          }
+          @media only screen and (min-width: 1100px) {
+          
+            #slider-container #sliders .slides {
+              width: calc(2.5% - 20px);
+            }
+          
+          }
+          
+          @media only screen and (max-width: 1100px) {
+          
+            #slider-container #sliders .slides {
+              width: calc(3.3333333% - 20px);
+            }
+          
+          }
+          
+          @media only screen and (max-width: 900px) {
+          
+            #slider-container #sliders .slides {
+              width: calc(5% - 20px);
+            }
+          
+          }
+          
+          @media only screen and (max-width: 550px) {
+          
+            #slider-container #sliders .slides {
+                margin-left: 40px;
+              width: calc(41% - 20px);
+            }
+            #slider-container .btn {
+                position: absolute;
+                top: calc(50% - 30px);
+                height: 30px;
+                width: 30px;
+                border-left: 4px solid white;
+                border-top: 4px solid white;
+              }
+          
+          }
+    </style>
+    <style>
+        .logomenu {
+            margin: 0;
+            padding: 0;
+            height: 38vh;
+            width: 100%;
+            background-color: white;
+        }
+
+        #logomain{
+            position: absolute;
+            top: 3%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            animation: fills 0.5s ease forwards 5.5s ;
+        }
+        #logomain path:nth-child(1){
+            stroke-dasharray: 95;
+            stroke-dashoffset: 95;
+            animation: lineanimation 2s ease forwards 2.0s;
+        }
+        #logomain path:nth-child(2){
+            stroke-dasharray: 100;
+            stroke-dashoffset: 100;
+            animation: lineanimation 2s ease forwards 3.2s;
+        }
+        #logomain path:nth-child(3){
+            stroke-dasharray: 138;
+            stroke-dashoffset: 138;
+            animation: lineanimation 2s ease forwards 2s;
+        }
+        #logomain path:nth-child(4){
+            stroke-dasharray: 120;
+            stroke-dashoffset: 120;
+            animation: lineanimation 2s ease forwards 2.5s;
+        }
+        #logomain path:nth-child(5){
+            stroke-dasharray: 138;
+            stroke-dashoffset: 138;
+            animation: lineanimation 2s ease forwards 1.5s;
+        }
+        #logomain path:nth-child(6){
+            stroke-dasharray: 144;
+            stroke-dashoffset: 144;
+            animation: lineanimation 2s ease forwards 3s;
+        }
+        #logomain path:nth-child(7){
+            stroke-dasharray: 115;
+            stroke-dashoffset: 115;
+            animation: lineanimation 2s ease forwards 3.5s;
+        }
+        #logomain path:nth-child(8){
+            stroke-dasharray: 120;
+            stroke-dashoffset: 120;
+            animation: lineanimation 2s ease forwards 2s;
+        }
+        #logomain path:nth-child(9){
+            stroke-dasharray: 100;
+            stroke-dashoffset: 100;
+            animation: lineanimation 2s ease forwards 2s;
+        }
+        #logomain path:nth-child(10){
+            stroke-dasharray: 110;
+            stroke-dashoffset: 110;
+            animation: lineanimation 2s ease forwards 1.5s;
+        }
+        #logomain path:nth-child(11){
+            stroke-dasharray: 100;
+            stroke-dashoffset: 100;
+            animation: lineanimation 2s ease forwards 2.5s;
+        }
+        #logomain path:nth-child(12){
+            stroke-dasharray: 128;
+            stroke-dashoffset: 128;
+            animation: lineanimation 2s ease forwards 4s;
+        }
+
+        #logomain path:nth-child(13){
+            stroke-dasharray: 100;
+            stroke-dashoffset: 100;
+            animation: lineanimation 2s ease forwards 1.0s;
+        }
+        #logomain path:nth-child(14){
+            stroke-dasharray: 100;
+            stroke-dashoffset: 100;
+            animation: lineanimation 2s ease forwards 2.0s;
+        }
+        #logomain path:nth-child(15){
+            stroke-dasharray: 180;
+            stroke-dashoffset: 180; 
+            animation: lineanimation 2s ease forwards 2.5s;    
+        }
+        #logomain path:nth-child(16){
+            stroke-dasharray: 120;
+            stroke-dashoffset: 120;
+            animation: lineanimation 2s ease forwards 3s;
+        }
+       
+        @keyframes lineanimation{
+            to{
+                stroke-dashoffset: 0;
+            }
+        }
+
+        @keyframes fills{
+            from{
+                fill: transparent;
+            }
+            to{
+                fill: black;
+            }
+        }
+        @media only screen and (max-width: 880px) {
+            #logomain {
+                margin-top: 30px;
+                height: 85px;
+                left: 50%;
+                transform: translate(-50%, -50%);
+        }
+    }
+        @media only screen and (max-width: 768px) {
+            /* Adjust for tablets and small screens */
+            .logomenu {
+                height: 40vh;
+            }
+        
+            #logomain {
+                height: 60px;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        
+            .mouse_scroll {
+                width: 20px;
+                height: 80px;
+            }
+        }
+    
+        @media only screen and (max-width: 600px) {
+            /* Adjust for mobile screens */
+            .logomenu {
+                height: 40vh;
+            }
+        
+            #logomain {
+               height: 60px;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+        @media only screen and (max-width: 500px) {
+            /* Adjust for mobile screens */
+            .logomenu {
+                height: 40vh;
+            }
+        
+            #logomain {
+               height: 50px;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+        @media only screen and (max-width: 420px) {
+            /* Adjust for mobile screens */
+            .logomenu {
+                height: 40vh;
+            }
+        
+            #logomain {
+               height: 45px;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+        
+        @media only screen and (max-width: 380px) {
+            /* Adjust for mobile screens */
+            .logomenu {
+                height: 40vh;
+            }
+        
+            #logomain {
+               height: 35px;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+    </style>
+    
+<style>
+        .con {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+             display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #fff;
+        }
+
+        #preloader {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            background-color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+        }
+
+        .logo-container {
+            perspective: 3000px;
+        }
+
+        .logos {
+            width: 600px;
+            animation: moveBackAndBlur 8s forwards;
+        }
+
+        @keyframes moveBackAndBlur {
+            0% {
+                transform: translateZ(0);
+                filter: blur(0);
+            }
+
+            100% {
+                transform: translateZ(-700px);
+                filter: blur(20px);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .logos {
+                width: 40vw;
+            }
+        }
+        @media (max-width: 480px) {
+            .logos {
+                width: 50vw;
+            }
+        }
+    </style>
+<style>
+    
+    .scroll-contains {
+        display: flex;
+        align-items: center;
+        width: 100vw;
+        height: 100px;
+        overflow: hidden;
+        white-space: nowrap;
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+    
+    .scroll-contens {
+        display: flex;
+        white-space: nowrap;
+        animation: scroll 30s linear infinite;
+    }
+    
+    .scroll-contens img {
+        height: 100px;
+        margin-right: 60px;
+    }
+    
+    @keyframes scroll {
+        0% {
+            transform: translateX(100%);
+        }
+    
+        100% {
+            transform: translateX(-100%);
+        }
+    }
+    
+    /* Responsive Styles */
+    @media (max-width: 1200px) {
+        .scroll-contains {
+            height: 100px;
+        }
+    
+        .scroll-contens img {
+            height: 100px;
+            margin-right: 20px;
+        }
+    }
+    
+    @media (max-width: 992px) {
+        .scroll-contains {
+            height: 70px;
+        }
+    
+        .scroll-contens img {
+            height: 90px;
+            margin-right: 40px;
+        }
+    }
+    
+    @media (max-width: 768px) {
+        .scroll-contains {
+            height: 60px;
+        }
+    
+        .scroll-contens img {
+            height: 70px;
+            margin-right: 30px;
+        }
+    }
+    
+    @media (max-width: 576px) {
+        .scroll-contains{
+            height: 50px;
+        }
+    
+        .scroll-contens img {
+            height: 60px;
+            margin-right: 20px;
+        }
+    }
+    
+    @media (max-width: 400px) {
+        .scroll-contains {
+            height: 40px;
+        }
+    
+        .scroll-contens img {
+            height: 50px;
+            margin-right: 10px;
+        }
+    }
+
+</style>
+
+<style>
+ 
+    .times{
+        font: normal 16px/1.5 "Inter", sans-serif;
+        background: white;
+        color: white;
+        margin-bottom: 50px;
+      }
+      
+      /* .section SECTION
+      –––––––––––––––––––––––––––––––––––––––––––––––––– */
+    
+      .section .container {
+        width: 90%;
+        max-width: 1200px;
+        margin: 0 auto;
+        text-align: center;
+      }
+      
+      .section h1 {
+        font-size: 2.5rem;
+        line-height: 1.25;
+      }
+      
+      .section h2 {
+        font-size: 1.3rem;
+      }
+      
+      /* TIMELINE
+      –––––––––––––––––––––––––––––––––––––––––––––––––– */
+      
+      .timeline {
+        position: relative;
+        white-space: nowrap;
+        max-width: 1400px;
+        padding: 0 10px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 320px auto;
+        grid-gap: 20px;
+      }
+      
+      .timeline::before,
+      .timeline::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 30px;
+        width: 100px;
+        z-index: 2;
+      }
+      
+      .timeline::after {
+        right: 0;
+      }
+      
+      .timeline::before {
+        left: 340px;
+      }
+      
+      .timeline .info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 20px 40px;
+        color: white;
+        background: black;
+        white-space: normal;
+        border-radius: 10px;
+      }
+      
+      .timeline .info img {
+        margin-bottom: 20px;
+      }
+      
+      .timeline .info p {
+        margin-top: 10px;
+        color: black;
+      }
+      
+      .timeline .info a {
+        text-decoration: none;
+        color:white;
+      }
+      
+      .timeline ol::-webkit-scrollbar {
+        height: 12px;
+      }
+      
+      .timeline ol::-webkit-scrollbar-thumb,
+      .timeline ol::-webkit-scrollbar-track {
+        border-radius: 92px;
+      }
+      .timeline ol {
+        font-size: 0;
+        padding: 250px 0;
+        transition: all 1s;
+        overflow-x: scroll;
+        scroll-snap-type: x mandatory;
+        scrollbar-color: black,white;
+      }
+      
+      .timeline ol li {
+        position: relative;
+        display: inline-block;
+        list-style-type: none;
+        width: 160px;
+        height: 5px;
+        background: black;
+        scroll-snap-align: start;
+      }
+      
+      .timeline ol li:last-child {
+        width: 340px;
+      }
+      
+      .timeline ol li:not(:first-child) {
+        margin-left: 14px;
+      }
+      
+      .timeline ol li:not(:last-child)::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: calc(100% + 1px);
+        bottom: 0;
+        width: 16px;
+        height: 16px;
+        transform: translateY(-50%);
+        border-radius: 50%;
+        background: #01565b;
+        z-index: 1;
+      }
+      
+      .timeline ol li div {
+        position: absolute;
+        left: calc(100% + 7px);
+        width: 280px;
+        padding: 15px;
+        font-size: 1rem;
+        white-space: normal;
+        color: white;
+        background: black;
+        border-radius: 0 10px 10px 10px;
+      }
+      
+      .timeline ol li div::before {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 0;
+        height: 0;
+        border-style: solid;
+      }
+      
+      .timeline ol li:nth-child(odd) div {
+        top: -16px;
+        transform: translateY(-100%);
+        border-radius: 10px 10px 10px 0;
+      }
+      
+      .timeline ol li:nth-child(odd) div::before {
+        top: 100%;
+        border-width: 8px 8px 0 0;
+        border-color: black transparent transparent transparent;
+      }
+      
+      .timeline ol li:nth-child(even) div {
+        top: calc(100% + 16px);
+      }
+      
+      .timeline ol li:nth-child(even) div::before {
+        top: -8px;
+        border-width: 8px 0 0 8px;
+        border-color: transparent transparent transparent black;
+      }
+      
+      .timeline time {
+        display: block;
+        font-size: 1.4rem;
+        font-weight: bold;
+        margin-bottom: 8px;
+        color: white;
+        background:black;
+      }
+      /* MEDIA QUERIES FOR RESPONSIVENESS */
+@media screen and (max-width: 1200px) {
+    .timeline {
+      grid-template-columns: 280px auto;
+    }
+    
+    .timeline::before {
+      left: 300px;
+    }
+  }
+  
+  @media screen and (max-width: 992px) {
+    .section h1 {
+      font-size: 2rem;
+    }
+    
+    .timeline {
+      grid-template-columns: 1fr;
+      padding: 0;
+    }
+    
+    .timeline::before,
+    .timeline::after {
+      display: none;
+    }
+    
+    .timeline .info {
+      display: none;
+    }
+    .timeline ol li {
+        position: relative;
+        display: inline-block;
+        list-style-type: none;
+        width: 160px;
+        height: 5px;
+        background: black;
+        scroll-snap-align: start;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .section h1 {
+      font-size: 1.8rem;
+    }
+    
+    .timeline ol {
+      padding: 280px 0;
+      flex: auto;
+      flex-direction: row;
+    }
+    
+    .timeline ol li {
+      width: 140px;
+    }
+    
+    .timeline ol li div {
+      width: 240px;
+    }
+    
+    .timeline time {
+      font-size: 1.2rem;
+    }
+  }
+  
+  @media screen and (max-width: 576px) {
+ 
+    
+    .section h1 {
+      font-size: 1.5rem;
+    }
+    
+    .section h2 {
+      font-size: 1.1rem;
+    }
+    
+    .timeline ol {
+      padding: 350px 0;
+    }
+    
+    .timeline ol li {
+      width: 120px;
+    }
+    
+    .timeline ol li div {
+      width: 200px;
+    }
+    
+    .timeline time {
+      font-size: 1rem;
+    }
+  }
+      
+      /* GENERAL MEDIA QUERIES
+      –––––––––––––––––––––––––––––––––––––––––––––––––– */
+      @media screen and (max-width: 800px) {
+        .timeline {
+          display: block;
+        }
+      
+        .timeline::before,
+        .timeline::after {
+          width: 50px;
+        }
+      
+        .timeline::before {
+          left: 0;
+        }
+      
+        .timeline .info {
+          display: none;
+        }
+      }
+      
+      
+</style>
 </head>
 
 <body>
+    <div id="preloader">
+        <div class="logo-container">
+            <img src="./images/Logo/Logo- Bijan.png" alt="Logo" class="logos">
+        </div>
+    </div>
     <div class="ie-only">
         <div class="center-box">
             <h2>IE &lt; 9</h2>
@@ -38,77 +792,59 @@
                     data-hover="update now">update now</span></a>
         </div>
     </div>
-    <!-- <div id="loader">
-        <div class="circle-first"></div>
-        <div class="circle-second"></div>
-        <div class="loader-logo">
-        </div>
-    </div> -->
     <div id="main" class="m-scene">
         <div class="navigation">
             <div class=" scene_element scene_element--fadein">
                 <h1 class="logo animated" style="height: 60px; width: auto; top: 30px; left: 30px;">
-                    <a href="index-2.html">
-                        <span>Supercrew</span>
-                        <img src="img/Supercrew-short-whitebg.png" alt="Yehlo Digital" style="height: 60px; width: auto;">
+                    <a href="index.html">
+                        <img src="images/Logo/Logo- Bijan.png" alt="Yehlo Digital" style="height: 60px; width: auto;">
                     </a>
                 </h1>
-                <div class="mc-chicken" style="color: white;">
+                <div class="mc-chicken opened" style="color: black;">
                     <div>MENU</div>
-                    <span style="background-color: white;"></span>
-                    <span style="background-color: white;"></span>
-                </div>
-                <div class="contact-icon">
-                    <a href="contact.html">
-                        <img src="img/icon-hireus.png" alt="Hire us">
-                    </a>
+                    <span style="background-color: black;"></span>
+                    <span style="background-color: black;"></span>
                 </div>
             </div>
-            <div class="slidenav">
-                <div class="nav-img">
-                    <svg width="100%" height="100%" preserveAspectRatio="none" viewBox="0 0 1440 800">
-                        <defs>
-                            <path class="nav-scene" id="nav-img-mask"
-                                d="M 1066,436 C 1051,543.8 973.2,656.2 873.6,700.1 756.6,751.7 600.9,725 492.4,657.4 431.5,619.5 387.5,546.9 376.7,476 360.3,368.3 377.9,229.2 462.5,160.5 589.5,57.34 815.4,42.24 952.4,131.7 1044,190.8 1081,328.8 1066,436 Z"
-                                pathdata:id="M 1041,450.4 C 1023,547.7 992.8,667.7 905.7,714.5 793.1,775 639,728.7 524.5,671.8 453.3,636.4 382.2,575.4 360.2,499 329.7,393 344.6,249.2 426,174.9 568.6,44.66 851.1,-8.71 1002,111.8 1091,182.7 1061,338.6 1041,450.4 Z;M 1066,436 C 1051,543.8 976.5,664.5 873.6,700.1 761,739.1 636.4,655.8 529.5,603.1 441.6,559.8 325.8,520.1 293.8,427.5 263.1,338.4 294.5,213.4 368.2,154.8 520.7,33.48 790.1,23.76 952.4,131.7 1043,191.7 1081,328.8 1066,436 Z;M 1066,436 C 1053,531.1 930.7,580.1 842.2,617.2 734,662.7 598.4,707.8 492.4,657.4 427.6,626.6 387.5,546.9 376.7,476 360.3,368.3 376.9,227.9 462.5,160.5 567.6,77.69 749.9,37.5 863.8,148.8 947.6,230.7 1082,320.1 1066,436 Z" />
-                        </defs>
-                        <clipPath id="navCircleClip">
-                            <use xlink:href="#nav-img-mask" />
-                        </clipPath>
-                        <image data-img-clip="Home" clip-path="url(#navCircleClip)" width="1440" height="800"
-                            xlink:href="img/navigation/work.jpg" class="selected"></image>
-                        <!-- <image data-img-clip="Services" clip-path="url(#navCircleClip)" width="1440" height="800"
-                            xlink:href="img/navigation/studio.jpg" class="selected"></image> -->
-                        <image data-img-clip="Team" clip-path="url(#navCircleClip)" width="1440" height="800"
-                            xlink:href="img/navigation/team.jpg"></image>
-                        <image data-img-clip="Contact" clip-path="url(#navCircleClip)" width="1440" height="800"
-                            xlink:href="img/navigation/contact.jpg"></image>
-                        
-                        <use xlink:href="#nav-img-mask" />
-                    </svg>
-                </div>
+            <div class="slidenav active">
                 <nav class="navlinks-wrap">
                     <ul class="navlinks">
-                        <li  class="selected">
+                        <li class="selected">
                             <div class="link-mask-wrap">
-                                <a class="link" data-nav-link="Home" href="index-2.html">
-                                    <div class="link-mask"><span>Home<i>.</i></span></div>
+                                <a class="link" data-nav-link="Home" href="index.html">
+                                    <div class="link-mask"><span>Home</span></div>
                                     <span class="fake-link"></span>
                                 </a>
                             </div>
                         </li>
-                        <!-- <li>
+                        <li>
                             <div class="link-mask-wrap">
-                                <a class="link active" data-nav-link="Services" href="services.html">
-                                    <div class="link-mask"><span>Services<i>.</i></span></div>
+                                <a class="link" data-nav-link="Team" href="AboutUs.html">
+                                    <div class="link-mask"><span>AboutUs</span></div>
                                     <span class="fake-link"></span>
                                 </a>
                             </div>
-                        </li> -->
+                        </li>
                         <li>
                             <div class="link-mask-wrap">
-                                <a class="link" data-nav-link="Team" href="team.html">
-                                    <div class="link-mask"><span>Team<i>.</i></span></div>
+                                <a class="link" data-nav-link="Team" href="Gallery.html">
+                                    <div class="link-mask"><span>Gallery</span></div>
+                                    <span class="fake-link"></span>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="link-mask-wrap">
+                                <a class="link" data-nav-link="Team" href="Testimonial.html">
+                                    <div class="link-mask"><span>Testimonial</span></div>
+                                    <span class="fake-link"></span>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="link-mask-wrap">
+                                <a class="link" data-nav-link="Team" href="Clientele.html">
+                                    <div class="link-mask"><span>Clientele</span></div>
                                     <span class="fake-link"></span>
                                 </a>
                             </div>
@@ -116,69 +852,54 @@
                         <li>
                             <div class="link-mask-wrap">
                                 <a class="link" data-nav-link="Contact" href="contact.html">
-                                    <div class="link-mask"><span>Contact<i>.</i></span></div>
+                                    <div class="link-mask"><span>ContactUs</span></div>
                                     <span class="fake-link"></span>
                                 </a>
                             </div>
                         </li>
-                        <!-- <li>
-                            <div class="link-mask-wrap">
-                                <a class="link" data-nav-link="funhouse" href="funhouse.html">
-                                    <div class="link-mask"><span>funhouse<i>.</i></span></div>
-                                    <span class="fake-link"></span>
-                                </a>
-                            </div>
-                        </li> -->
                     </ul>
                 </nav>
             </div>
         </div>
-        <div class="scene-element scene_element--fadeinup">
-            <div class="grid-wrap" style="background-color: #101010;">
-                <header class="main-heading studio row">
-                    <div class="col-xs-12 col-sm-12">
-                        <h1 class="wow textLeft" style="line-height: 0px; margin-top: 25vh" data-wow-delay=".1s">
-                            <span class="test10 test1" style="color: white;">Supercrew</span>
-                            <br>
-                            <span class="test10 test2" style="color: white; font-weight: 700;">Your Brand, Our Wings.<b class=""
-                                    style="color: #1B1A25 !important;"></b></span>
-                        </h1>
-
-                    </div>
-                    <div class="scroll-line">
-                        <span style="background-color: white;"></span>
-                        <span style="background-color: white;"></span>
-                    </div>
-                    <div class="shape-morph wow fadeIn">
-                        <!-- <svg width="100%" height="100%" preserveAspectRatio="none" viewBox="0 0 1440 800">
-                            <defs>
-                                <path class="scene" id="img-mask"
-                                    d="M 1066,436 C 1051,543.8 973.2,656.2 873.6,700.1 756.6,751.7 600.9,725 492.4,657.4 431.5,619.5 387.5,546.9 376.7,476 360.3,368.3 377.9,229.2 462.5,160.5 589.5,57.34 815.4,42.24 952.4,131.7 1044,190.8 1081,328.8 1066,436 Z"
-                                    pathdata:id="M 1041,450.4 C 1023,547.7 992.8,667.7 905.7,714.5 793.1,775 639,728.7 524.5,671.8 453.3,636.4 382.2,575.4 360.2,499 329.7,393 344.6,249.2 426,174.9 568.6,44.66 851.1,-8.71 1002,111.8 1091,182.7 1061,338.6 1041,450.4 Z;M 1066,436 C 1051,543.8 976.5,664.5 873.6,700.1 761,739.1 636.4,655.8 529.5,603.1 441.6,559.8 325.8,520.1 293.8,427.5 263.1,338.4 294.5,213.4 368.2,154.8 520.7,33.48 790.1,23.76 952.4,131.7 1043,191.7 1081,328.8 1066,436 Z;M 1066,436 C 1053,531.1 930.7,580.1 842.2,617.2 734,662.7 598.4,707.8 492.4,657.4 427.6,626.6 387.5,546.9 376.7,476 360.3,368.3 376.9,227.9 462.5,160.5 567.6,77.69 749.9,37.5 863.8,148.8 947.6,230.7 1082,320.1 1066,436 Z" />
-                            </defs>
-                            <clipPath id="circleClip">
-                                <use xlink:href="#img-mask" />
-                            </clipPath>
-                            <image clip-path="url(#circleClip)" width="1440" height="800"
-                                xlink:href="img/navigation/studio.jpg"></image>
-                            <use xlink:href="#img-mask" />
-                        </svg> -->
-                    </div>
-
-                </header>
-                <div id="studio-intro">
-                    <div class="row middle-xs">
-                        <div class="col-xs-12 col-md-10 col-md-offset-1 col-lg-offset-2">
-                            <h3 class="wow textLeft" style="color: white;">We take your growth problems seriously.</h3>
-                            <p class="wow big textLeft" style="color: white;">We are a tech-first D2C Growth Studio. With 4+ years of experience in branding, our crew works very closely with brands to execute customised growth strategies because each brand is unique for us and so is our solution. Brands love us because we don't burn, we innovate to grow sustainably.
-                            </p>
-                        </div>
-                    </div>
-                </div>
+        </div> 
+     <div>
+      <div class="logomenu">   
+                <svg id="logomain" width="1000" height="100" viewBox="0 0 374 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19.9006 28.6304L19.9006 28.6304L19.9034 28.6259C20.6757 27.396 21.06 26.0231 21.06 24.52C21.06 23.3232 20.7889 22.193 20.2472 21.1364C19.7351 20.0855 19.0222 19.2011 18.1109 18.4884C17.6232 18.0955 17.1032 17.7829 16.5518 17.5518C17.4923 17.0667 18.2924 16.4299 18.9453 15.6387C19.938 14.4414 20.42 12.9495 20.42 11.2C20.42 9.77883 20.0634 8.48597 19.344 7.335C18.6181 6.17359 17.5377 5.27448 16.1327 4.62746C14.7164 3.94849 13.0263 3.62 11.08 3.62H1.08H0.580002V4.12V32V32.5H1.08H11.48C13.4029 32.5 15.0922 32.1704 16.5329 31.4924L16.5329 31.4924L16.5367 31.4906C17.9935 30.7902 19.1232 29.8396 19.9006 28.6304ZM14.9962 20.901L14.9961 20.901L15.0018 20.9057C15.9388 21.6787 16.42 22.7426 16.42 24.16C16.42 25.5568 15.9611 26.5938 15.0779 27.3375C14.1831 28.091 12.8989 28.5 11.16 28.5H5.22V19.66H11.04C12.7416 19.66 14.0426 20.0904 14.9962 20.901ZM10.84 15.66H5.22V7.62H10.76C12.4514 7.62 13.6641 8.00493 14.4746 8.69962C15.2799 9.38987 15.7 10.3483 15.7 11.64C15.7 12.9317 15.2799 13.8901 14.4746 14.5804C13.6617 15.2772 12.4735 15.66 10.84 15.66Z" stroke="black"/>
+                    <path d="M29.7512 10.08V9.58H29.2512H25.6112H25.1112V10.08V32V32.5H25.6112H29.2512H29.7512V32V10.08ZM25.3777 6.15355C25.9537 6.72954 26.6685 7.02 27.4912 7.02C28.2916 7.02 28.9818 6.72618 29.5298 6.1485C30.1025 5.57338 30.3912 4.86036 30.3912 4.04C30.3912 3.21964 30.1025 2.50661 29.5298 1.9315C28.9818 1.35382 28.2916 1.06 27.4912 1.06C26.6685 1.06 25.9537 1.35045 25.3777 1.92644C24.8017 2.50244 24.5112 3.21723 24.5112 4.04C24.5112 4.86276 24.8017 5.57756 25.3777 6.15355Z" stroke="black"/>
+                    <path d="M35.2915 6.14331L35.2964 6.1485L35.3014 6.15355C35.8774 6.72954 36.5922 7.02 37.415 7.02C38.2357 7.02 38.9413 6.73055 39.4936 6.14852C40.0662 5.5734 40.355 4.86037 40.355 4.04C40.355 3.21963 40.0662 2.50659 39.4936 1.93147C38.9413 1.34945 38.2357 1.06 37.415 1.06C36.5922 1.06 35.8774 1.35045 35.3014 1.92644L35.2964 1.93149L35.2915 1.93669C34.7458 2.51451 34.475 3.22606 34.475 4.04C34.475 4.85394 34.7458 5.56549 35.2915 6.14331ZM30.795 42.4V42.9H31.295H33.415C35.382 42.9 36.9623 42.4291 38.0733 41.4082C39.2024 40.3707 39.715 38.7823 39.715 36.76V10.08V9.58H39.215H35.575H35.075V10.08V36.68C35.075 37.587 34.8701 38.0955 34.593 38.3552L34.5871 38.3607L34.5814 38.3664C34.3263 38.6216 33.7918 38.82 32.815 38.82H31.295H30.795V39.32V42.4Z" stroke="black"/>
+                    <path d="M48.8449 10.6881L48.8449 10.6881L48.8418 10.69C47.1855 11.6725 45.8832 13.0618 44.9361 14.844C43.9843 16.6083 43.5169 18.6521 43.5169 20.96C43.5169 23.2433 43.9851 25.298 44.9338 27.1118C45.8799 28.9203 47.1809 30.3366 48.8364 31.3468C50.4927 32.3574 52.3437 32.86 54.3769 32.86C56.3449 32.86 58.0881 32.4297 59.5893 31.5516L59.5918 31.5501C60.5746 30.9678 61.4049 30.2852 62.0769 29.5009V32V32.5H62.5769H66.2569H66.7569V32V10.08V9.58H66.2569H62.5769H62.0769V10.08V12.4945C61.4264 11.7404 60.6218 11.0855 59.6693 10.5284C58.1671 9.64974 56.4101 9.22 54.4169 9.22C52.3864 9.22 50.5254 9.70787 48.8449 10.6881ZM58.6011 14.3096L58.601 14.3098L58.6132 14.3166C59.672 14.9075 60.5131 15.7697 61.1376 16.9188C61.7577 18.0597 62.0769 19.4147 62.0769 21C62.0769 22.5841 61.7581 23.9537 61.1365 25.1233C60.5116 26.2722 59.6691 27.149 58.6073 27.7667C57.5674 28.3606 56.4142 28.66 55.1369 28.66C53.8605 28.66 52.7081 28.3611 51.6688 27.7681C50.6339 27.1511 49.8033 26.2743 49.1773 25.1232C48.5562 23.9548 48.2369 22.5722 48.2369 20.96C48.2369 19.3747 48.5561 18.0197 49.1762 16.8788C49.8023 15.7267 50.6322 14.8642 51.6649 14.2741C52.7052 13.6797 53.859 13.38 55.1369 13.38C56.4109 13.38 57.5619 13.6911 58.6011 14.3096Z" stroke="black"/>
+                    <path d="M92.0481 32.5H92.5481V32V19.08C92.5481 15.9507 91.6953 13.4837 89.9173 11.7621C88.1565 10.0305 85.864 9.17999 83.0881 9.17999C81.5241 9.17999 80.0749 9.50174 78.7483 10.1509L78.7483 10.1509L78.7445 10.1528C77.9022 10.5739 77.1691 11.1095 76.5481 11.7587V10.08V9.57999H76.0481H72.4081H71.9081V10.08V32V32.5H72.4081H76.0481H76.5481V32V19.88C76.5481 17.6642 77.0886 16.0594 78.0917 14.9833C79.1288 13.8991 80.5225 13.34 82.3281 13.34C84.11 13.34 85.4607 13.8874 86.4423 14.9409L86.4423 14.9409L86.4463 14.945C87.4218 15.9682 87.9481 17.4923 87.9481 19.6V32V32.5H88.4481H92.0481Z" stroke="black"/>
+                    <path d="M110.88 32.5H111.233L111.351 32.1673L114.158 24.2614H125.216L128.022 32.1673L128.141 32.5H128.494H132.187H132.903L132.656 31.8277L121.974 2.73675L121.854 2.40909H121.505H117.869H117.52L117.399 2.73675L106.717 31.8277L106.471 32.5H107.187H110.88ZM119.687 8.68586L123.752 20.1364H115.622L119.687 8.68586Z" stroke="black"/>
+                    <path d="M139.409 31.4927L139.411 31.494C140.893 32.4714 142.595 32.9545 144.502 32.9545C145.952 32.9545 147.167 32.7156 148.11 32.1965L148.11 32.1965L148.114 32.1944C148.999 31.6968 149.706 31.1205 150.212 30.4564L150.215 30.4534C150.417 30.1838 150.6 29.9329 150.763 29.701V32V32.5H151.263H154.502H155.002V32V2.90909V2.40909H154.502H151.15H150.65V2.90909V12.4636C150.521 12.287 150.381 12.0992 150.23 11.9003C149.742 11.2332 149.047 10.6608 148.172 10.1727C147.244 9.6405 146.025 9.39773 144.559 9.39773C142.634 9.39773 140.918 9.88033 139.427 10.8574C137.939 11.8324 136.787 13.2102 135.967 14.9705C135.143 16.7358 134.741 18.7996 134.741 21.1477C134.741 23.5142 135.143 25.5919 135.966 27.3666L135.967 27.3676C136.787 29.1267 137.933 30.5083 139.409 31.4927ZM150.03 16.9948L150.03 16.996C150.477 18.1479 150.707 19.5094 150.707 21.0909C150.707 22.6901 150.472 24.0807 150.016 25.2717C149.561 26.448 148.907 27.3477 148.063 27.994C147.235 28.6187 146.21 28.9432 144.957 28.9432C143.648 28.9432 142.588 28.6006 141.744 27.9427C140.886 27.2574 140.226 26.3319 139.771 25.1469C139.322 23.942 139.093 22.592 139.093 21.0909C139.093 19.6076 139.317 18.2864 139.757 17.1204C140.201 15.9559 140.855 15.0559 141.71 14.3994L141.711 14.399C142.554 13.7492 143.625 13.4091 144.957 13.4091C146.233 13.4091 147.268 13.7309 148.095 14.347L148.098 14.349C148.938 14.9663 149.586 15.8397 150.03 16.9948Z" stroke="black"/>
+                    <path d="M176.698 15.5493L177.203 15.4065L177.036 14.9092C176.485 13.2667 175.548 11.9319 174.224 10.9213C172.877 9.88563 171.061 9.39774 168.835 9.39774C167.241 9.39774 165.797 9.67824 164.512 10.2506L164.51 10.2512C163.239 10.8219 162.216 11.6163 161.458 12.6401L161.458 12.6401L161.456 12.6427C160.699 13.6797 160.323 14.8732 160.323 16.2046C160.323 17.8222 160.826 19.2023 161.848 20.3082L161.848 20.3082L161.851 20.3118C162.882 21.4045 164.455 22.1716 166.503 22.657L166.505 22.6573L170.141 23.5095L170.142 23.5097C171.194 23.7546 171.909 24.1129 172.348 24.5442L172.348 24.5442L172.351 24.5474C172.781 24.9616 172.994 25.4648 172.994 26.0909C172.994 26.8318 172.639 27.4989 171.808 28.1007C171.002 28.6824 169.876 29 168.38 29C167.076 29 166.072 28.7214 165.327 28.2083C164.6 27.7014 164.086 26.9323 163.807 25.8523L163.683 25.3719L163.202 25.4922L160.02 26.2877L159.553 26.4043L159.652 26.8751C160.065 28.8481 161.057 30.3775 162.635 31.4225C164.195 32.4557 166.14 32.9546 168.437 32.9546C170.187 32.9546 171.746 32.6611 173.1 32.0592C174.446 31.4609 175.515 30.6328 176.285 29.5665C177.068 28.4941 177.46 27.2732 177.46 25.9205C177.46 24.282 176.941 22.9049 175.881 21.8337C174.835 20.7679 173.283 20.0113 171.283 19.5256C171.282 19.5256 171.282 19.5255 171.282 19.5255L168.047 18.7308C168.046 18.7308 168.046 18.7307 168.046 18.7306C166.785 18.4154 165.92 18.0347 165.396 17.6175C164.919 17.2373 164.675 16.7284 164.675 16.0341C164.675 15.2863 165.013 14.6586 165.78 14.1307L165.781 14.13C166.57 13.5846 167.577 13.2955 168.835 13.2955C169.761 13.2955 170.478 13.4446 171.011 13.7114C171.578 13.9946 172.005 14.3452 172.311 14.7561L172.311 14.7562L172.318 14.7649C172.66 15.2034 172.913 15.6475 173.083 16.097L173.245 16.5266L173.687 16.4016L176.698 15.5493Z" stroke="black"/>
+                    <path d="M194.903 32.5H195.256L195.375 32.1673L198.181 24.2614H209.239L212.046 32.1673L212.164 32.5H212.517H216.21H216.926L216.68 31.8277L205.998 2.73675L205.877 2.40909H205.528H201.892H201.543L201.423 2.73675L190.741 31.8277L190.494 32.5H191.21H194.903ZM203.71 8.68585L207.775 20.1364H199.645L203.71 8.68585Z" stroke="black"/>
+                   <path d="M223.639 32.5H224.139V32V18.875C224.139 17.6687 224.369 16.6755 224.803 15.8748C225.244 15.0631 225.836 14.4575 226.58 14.0425C227.341 13.624 228.212 13.4091 229.207 13.4091C230.648 13.4091 231.726 13.8524 232.504 14.6968L232.506 14.6986C233.286 15.5366 233.707 16.7355 233.707 18.3636V32V32.5H234.207H237.56H238.06V32V18.1364C238.06 16.2293 237.744 14.6114 237.083 13.3084C236.425 12.0045 235.495 11.0167 234.29 10.3674C233.097 9.71526 231.72 9.39774 230.173 9.39774C228.46 9.39774 227.012 9.75203 225.867 10.5012C225.132 10.9758 224.517 11.5537 224.026 12.2329V10.1818V9.68183H223.526H220.287H219.787V10.1818V32V32.5H220.287H223.639Z" stroke="black"/>
+                   <path d="M246.831 31.4927L246.833 31.494C248.314 32.4714 250.017 32.9545 251.924 32.9545C253.374 32.9545 254.589 32.7156 255.532 32.1965L255.532 32.1965L255.535 32.1944C256.421 31.6968 257.128 31.1205 257.634 30.4564L257.637 30.4534C257.839 30.1838 258.022 29.9329 258.185 29.701V32V32.5H258.685H261.924H262.424V32V2.90909V2.40909H261.924H258.572H258.072V2.90909V12.4637C257.943 12.287 257.803 12.0992 257.652 11.9003C257.164 11.2332 256.469 10.6608 255.593 10.1727C254.666 9.6405 253.447 9.39773 251.981 9.39773C250.056 9.39773 248.34 9.88033 246.849 10.8574C245.361 11.8324 244.209 13.2102 243.388 14.9705C242.565 16.7358 242.163 18.7996 242.163 21.1477C242.163 23.5142 242.565 25.5919 243.388 27.3666L243.388 27.3676C244.209 29.1267 245.355 30.5083 246.831 31.4927ZM257.452 16.9948L257.452 16.996C257.899 18.1479 258.129 19.5094 258.129 21.0909C258.129 22.6901 257.894 24.0807 257.438 25.2717C256.983 26.448 256.329 27.3477 255.485 27.994C254.657 28.6187 253.632 28.9432 252.379 28.9432C251.07 28.9432 250.01 28.6006 249.166 27.9427C248.308 27.2574 247.648 26.3319 247.193 25.1469C246.744 23.942 246.515 22.592 246.515 21.0909C246.515 19.6076 246.739 18.2864 247.178 17.1204C247.623 15.9559 248.277 15.0559 249.132 14.3994L249.132 14.399C249.976 13.7492 251.047 13.4091 252.379 13.4091C253.654 13.4091 254.69 13.7309 255.517 14.347L255.52 14.349C256.36 14.9663 257.007 15.8397 257.452 16.9948Z" stroke="black"/>
+                   <path d="M279.734 32V32.5H280.234H283.756H284.256V32V19.4886H296.37H296.87V18.9886V15.8636V15.3636H296.37H284.256V6.53409H297.677H298.177V6.03409V2.90909V2.40909H297.677H280.234H279.734V2.90909V32Z" stroke="black"/>
+                   <path d="M302.756 32V32.5H303.256H306.608H307.108V32V10.1818V9.68182H306.608H303.256H302.756V10.1818V32ZM302.924 6.23868L302.924 6.2387L302.927 6.24215C303.494 6.77492 304.18 7.04546 304.96 7.04546C305.739 7.04546 306.422 6.77524 306.981 6.2404C307.549 5.70536 307.847 5.04093 307.847 4.27273C307.847 3.50451 307.549 2.84006 306.981 2.30502C306.422 1.7702 305.739 1.5 304.96 1.5C304.18 1.5 303.494 1.77053 302.927 2.3033L302.927 2.30328L302.924 2.30677C302.365 2.84308 302.074 3.50715 302.074 4.27273C302.074 5.03831 302.365 5.70237 302.924 6.23868Z" stroke="black"/>
+                    <path d="M316.6 2.90909V2.40909H316.1H312.748H312.248V2.90909V32V32.5H312.748H316.1H316.6V32V2.90909Z" stroke="black"/>
+                    <path d="M321.74 32V32.5H322.24H325.592H326.092V32V18.3636C326.092 17.3666 326.303 16.5109 326.71 15.7815C327.136 15.0263 327.684 14.4469 328.355 14.0308C329.035 13.6144 329.759 13.4091 330.536 13.4091C331.696 13.4091 332.603 13.7558 333.301 14.4216L333.304 14.4238C333.995 15.0748 334.354 15.9356 334.354 17.0568V32V32.5H334.854H338.263H338.763V32V17.7955C338.763 16.4919 339.148 15.4532 339.895 14.6392L339.897 14.6373C340.624 13.8364 341.665 13.4091 343.092 13.4091C344.181 13.4091 345.108 13.7219 345.894 14.3393C346.608 14.8996 347.024 15.8711 347.024 17.3977V32V32.5H347.524H350.876H351.376V32V17.3977C351.376 14.7617 350.74 12.7165 349.366 11.3732C348.02 10.0485 346.293 9.39774 344.229 9.39774C342.594 9.39774 341.161 9.74987 339.952 10.477C338.967 11.0619 338.179 11.8198 337.594 12.7481C337.053 11.8049 336.352 11.0397 335.488 10.4634C334.431 9.74186 333.129 9.39774 331.615 9.39774C330.117 9.39774 328.802 9.74316 327.695 10.4567C327.003 10.8968 326.431 11.449 325.979 12.109V10.1818V9.68183H325.479H322.24H321.74V10.1818V32Z" stroke="black"/>
+                    <path d="M372.596 15.5493L373.101 15.4065L372.934 14.9092C372.383 13.2667 371.446 11.9319 370.122 10.9213C368.775 9.88563 366.96 9.39774 364.733 9.39774C363.14 9.39774 361.696 9.67824 360.41 10.2506L360.409 10.2512C359.138 10.8219 358.114 11.6163 357.357 12.6401L357.357 12.6401L357.355 12.6427C356.598 13.6797 356.222 14.8732 356.222 16.2046C356.222 17.8222 356.724 19.2023 357.747 20.3082L357.747 20.3082L357.75 20.3118C358.78 21.4045 360.353 22.1716 362.402 22.657L362.403 22.6573L366.039 23.5095L366.04 23.5097C367.092 23.7546 367.807 24.1129 368.246 24.5442L368.246 24.5442L368.25 24.5474C368.679 24.9616 368.892 25.4648 368.892 26.0909C368.892 26.8318 368.537 27.4989 367.707 28.1007C366.9 28.6824 365.774 29 364.278 29C362.975 29 361.97 28.7214 361.225 28.2083C360.498 27.7014 359.984 26.9323 359.706 25.8523L359.582 25.3719L359.1 25.4922L355.919 26.2877L355.452 26.4043L355.55 26.8751C355.963 28.8481 356.956 30.3775 358.534 31.4225C360.093 32.4557 362.038 32.9546 364.335 32.9546C366.086 32.9546 367.644 32.6611 368.999 32.0592C370.345 31.4609 371.414 30.6328 372.183 29.5665C372.966 28.4941 373.358 27.2732 373.358 25.9205C373.358 24.282 372.84 22.9049 371.779 21.8337C370.734 20.7679 369.182 20.0113 367.181 19.5256C367.181 19.5256 367.181 19.5255 367.18 19.5255L363.945 18.7308C363.945 18.7308 363.944 18.7307 363.944 18.7306C362.684 18.4154 361.818 18.0347 361.295 17.6175C360.817 17.2373 360.574 16.7284 360.574 16.0341C360.574 15.2863 360.911 14.6586 361.678 14.1307L361.679 14.13C362.468 13.5846 363.475 13.2955 364.733 13.2955C365.66 13.2955 366.376 13.4446 366.91 13.7114C367.476 13.9946 367.904 14.3452 368.21 14.7561L368.21 14.7562L368.217 14.7649C368.559 15.2034 368.811 15.6474 368.981 16.097L369.143 16.5266L369.585 16.4016L372.596 15.5493Z" stroke="black"/>
+                </svg>
             </div>
-
-            <div id="approach" style="background-color: #CA054D;">
-                <div class="svg-shape" style="color: white;">
+        </div>
+        <div class="scene-element scene_element--fadeinup">
+            <div class="grid-wrap" style="position: relative;">
+                <video autoplay muted loop id="bg-video" style="position: absolute; top: 0; left: 0; width: 100%; height: 90%; object-fit: cover; z-index: -1;">
+                    <source src="./images/Video/Marvel Tea TVC.mov" type="video/mp4">
+                </video>
+            
+                <header class="main-heading studio row">
+                    <div class="shape-morph wow fadeIn">   
+                    </div>
+                </header>
+                <!-- <div id="studio-intro">
+                    
+                </div> -->
+            </div>   
+            <div id="approach" style="background-color: white;">
+                <div class="svg-shape" style="color: black;">
                     <div class="wow fadeIn" data-wow-delay=".3s">
                         <svg width="100%" height="100%" viewBox="0 0 120 120">
                             <g fill="none" fill-rule="evenodd" stroke="currentColor" stroke-width="10" class="line">
@@ -195,59 +916,33 @@
                                 <div class="row bottom-xs">
                                     <div class="col-xs-12 col-sm-6 col-md-5 col-lg-4">
                                         <div class="box">
-                                            <h2 class="wrapped-heading" style="color: white;">
+                                            <h2 class="wrapped-heading" style="color: black;">
                                                 <span class="wow textLeft">app</span>
                                                 <span class="wow textLeft" data-wow-delay=".1s">roa</span>
                                                 <span class="wow textLeft" data-wow-delay=".2s">ch<b style="background-color: white;">.</b></span>
                                             </h2>
                                         </div>
                                     </div>
-                                    <div class="approach-desc col-xs-12 col-md-6 col-md-offset-1 col-lg-offset-2" style="color: white;">
+                                    <div class="approach-desc col-xs-12 col-md-6 col-md-offset-1 col-lg-offset-2" style="color: black;">
                                         <p class="box wow textLeft" data-wow-delay=".15s">
-                                            There are a lot of D2C brands in India but we work with only a select few. We have a simple application process for our exclusive club of brands, the Supercrew Club. 
+                                            At Bijan ADS & Films PVT Limited, we pride ourselves on partnering with only a select few brands to create exceptional advertising and film content. Our Crew Club is an exclusive community of brands that benefit from our premium services and unparalleled expertise.
                                         </p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="row">
-                            <!-- <div class="col-sm-12 col-md-4">
-                                <div class="approach-item center wow textLeft">
-                                    <span class="approach-icon">
-                                        <img data-alt-src="img/approach/icon-talk.gif" src="img/approach/icon-talk.png" alt="Talk">
-                                    </span>
-                                    <div class="approach-title">
-                                        <h3><sup>01</sup>ask</h3>
-                                    </div>
-                                    <div class="approach-content">
-                                        <p>We start with a few simple questions. Through thoughtful consideration of your responses, we're able to craft the essential guidelines that will shape your brand's online experience.</em> </p>
-                                    </div>
-                                </div>
-                            </div> -->
-                            <!-- <div class="col-sm-12 col-md-4">
-                                <div class="approach-item center wow textLeft">
-                                    <span class="approach-icon">
-                                        <img data-alt-src="img/approach/icon-think.gif" src="img/approach/icon-think.png" alt="Talk">
-                                    </span>
-                                    <div class="approach-title">
-                                        <h3><sup>02</sup>think</h3>
-                                    </div>
-                                    <div class="approach-content">
-                                        <p>We're solution oriented people - what others call problems, we see as challenges and opportunities. We find innovative solutions through creative thinking and open feedback loops. We keep it real - we'll promise to always tell you the truth, and that your feedback will never hurt our feelings. </p>
-                                    </div>
-                                </div>
-                            </div> -->
                             <div class="col-sm-12 col-md-4">
                                 <div class="approach-item center wow textLeft">
                                     <span class="approach-icon">
-                                        <img data-alt-src="img/approach/icon-design.gif"
-                                            src="img/approach/icon-design.png" alt="Talk">
+                                        <img data-alt-src="./images/approach/document.gif"
+                                            src="./images/approach/document.png" alt="Talk">
                                     </span>
                                     <div class="approach-title">
-                                        <h3><sup>01</sup>Apply</h3>
+                                        <h3><sup>01</sup> Apply</h3>
                                     </div>
                                     <div class="approach-content">
-                                        <p>Fill a quick form and our team will get in touch with you. 
+                                        <p>Complete a short form, and our team will reach out to you.
                                         </p>
                                     </div>
                                 </div>
@@ -255,14 +950,14 @@
                             <div class="col-sm-12 col-md-4">
                                 <div class="approach-item center wow textLeft">
                                     <span class="approach-icon">
-                                        <img data-alt-src="img/approach/icon-develop.gif"
-                                            src="img/approach/icon-develop.png" alt="Talk">
+                                        <img data-alt-src="./images/approach/labour-day.gif"
+                                            src="./images/approach/labour-day.png" alt="Talk">
                                     </span>
                                     <div class="approach-title">
-                                        <h3><sup>02</sup>Strategise</h3>
+                                        <h3><sup>02</sup>Strategize</h3>
                                     </div>
                                     <div class="approach-content">
-                                        <p>Once your brand is shortlisted our crew will work very closely with your team to prepare a detailed strategy.
+                                        <p>If your project is selected, our team will work closely with you to develop a comprehensive strategy. 
                                         </p>
                                     </div>
                                 </div>
@@ -270,14 +965,59 @@
                             <div class="col-sm-12 col-md-4">
                                 <div class="approach-item center wow textLeft">
                                     <span class="approach-icon">
-                                        <img data-alt-src="img/approach/icon-deploy.gif"
-                                            src="img/approach/icon-deploy.png" alt="Talk">
+                                        <img data-alt-src="./images/approach/strategic-consulting.gif"
+                                            src="./images/approach/strategic-consulting.png" alt="Talk">
                                     </span>
                                     <div class="approach-title">
-                                        <h3><sup>03</sup>Grow</h3>
+                                        <h3><sup>03</sup>Execute</h3>
                                     </div>
                                     <div class="approach-content">
-                                        <p>We will work together and make the dream happen. 
+                                        <p>Once the strategy is in place, we'll begin executing the plan to ensure the film achieves top 6 status.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-4">
+                                <div class="approach-item center wow textLeft">
+                                    <span class="approach-icon">
+                                        <img data-alt-src="./images/approach/review.gif"
+                                            src="./images/approach/review.png" alt="Talk">
+                                    </span>
+                                    <div class="approach-title">
+                                        <h3><sup>04</sup>Review</h3>
+                                    </div>
+                                    <div class="approach-content">
+                                        <p>We continuously monitor and review the progress to make adjustments as needed.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-4">
+                                <div class="approach-item center wow textLeft">
+                                    <span class="approach-icon">
+                                        <img data-alt-src="images/approach/promotion.gif"
+                                            src="./images/approach/promotion.png" alt="Talk">
+                                    </span>
+                                    <div class="approach-title">
+                                        <h3><sup>05</sup>Promote</h3>
+                                    </div>
+                                    <div class="approach-content">
+                                        <p>Our marketing experts will promote the film across various platforms to maximize its reach.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-4">
+                                <div class="approach-item center wow textLeft">
+                                    <span class="approach-icon">
+                                        <img data-alt-src="./images/approach/award.gif"
+                                            src="./images/approach/award.png" alt="Talk">
+                                    </span>
+                                    <div class="approach-title">
+                                        <h3><sup>06</sup>Succeed</h3>
+                                    </div>
+                                    <div class="approach-content">
+                                        <p>Achieve the goal of making your film one of the top 6, with full support from our team.
                                         </p>
                                     </div>
                                 </div>
@@ -285,103 +1025,121 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            
+                <!-- <img src="./images/BannerImages/WhatsApp Image 2024-08-12 at 21.50.13_0774b6b7.jpg"> -->
+                <!-- <div class="times">
+                    <section class="section intro">
+                        <div class="container">
+                        </div>
+                      </section>
+                <section class="timeline">
+                    <div class="info">
+                      <img width="25" height="25" src="https://assets.codepen.io/210284/face.svg" alt="" />
+                      <h2 style="font-size: 1.3rem;">Approach</h2>
+                      <p>
+                          <a href="">Learn more &gt;</a>
+                      </p>
+                    </div>
+                  
+                    <ol>
+                      <li>
+                        <div>
+                          <time>In-House Production</time>
+                            <p>The Exclusive Feature That Bijan Flaunts house Production Unit That Pulsates With Driblemished Visions And Sensibilities Of A Slunch Of Highly Experienced Creative Minds
+                            </p>
+                        </div>
+                      </li>
+                      <li>
+                        <div>
+                          <time>Media Planning & Buying
+                  </time> 
+                        Bijan's Media Planning & Buying Department Undertakes TG Analys
+ 
+                  Market Analysis, Medium Analysis And Media Recommendation & Budgeting On Extensive Level.
+                        </div>
+                      </li>
+                      <li>
+                        <div>
+                          <time>Electronic Communication
+                  </time>
+                          Sian Dreates Branding Os Electronic Media Through Strategic Conceptualization.Radio Commercials Corporate Films.
+                  
+                        </div>
+                      </li>
+                      <li>
+                        <div>
+                          <time>Print Communication
+                  </time> Bijan Plans, Designs And Producers All Kinds Of Pise Promotional Tools-Brochures, Leaflets, Catalogues Hoerdings Banners, Posters And More.
+                        </div>
+                      </li>
+                      <li>
+                        <div>
+                          <time>Digital & Social Media
+                  </time> <p>Building Awareness And Promoting A Brand Or Product Ondere Using All Available Digital Channels Through Internet Marnieting And Non-internet Digital Channels.</p>
+                        </div>
+                      </li>
+                      <li></li>
+                    </ol>
+                  </section>
+                  </div> -->
+            
+                </div>
             <!-- Services Wrap -->
             <div class="dark">
                 <div id="services">
                     <div class="grid-wrap" style="background-color: #101010;">
-                        <div class="offset-top">
+                        <div class="pt-12">
                             <div class="row">
                                 <div class="col-xs-12">
                                     <div class="row top-xs bottom-lg">
                                         <div class="col-xs-12 col-sm-6 col-md-5 col-lg-4">
                                             <div class="box">
                                                 <h2 class="wrapped-heading">
-                                                    <span class="wow textLeft">ser</span>
-                                                    <span class="wow textLeft" data-wow-delay=".1s">vic</span>
-                                                    <span class="wow textLeft" data-wow-delay=".2s">es<b
-                                                            class="test" style="background-color: white;">.</b></span>
+                                                    <span class="wow textLeft">service</span>
+                                                    <!-- <span class="wow textLeft" data-wow-delay=".1s">vic</span>
+                                                    <span class="wow textLeft" data-wow-delay=".2s">es</span> -->
                                                 </h2>
                                             </div>
                                         </div>
-                                        <div class="col-xs-12 col-md-6 col-lg-7 col-lg-offset-1">
-                                            <div class="svg-shape shape-static wow fadeIn" data-wow-delay=".3s">
-                                                <svg x="0px" y="0px" width="100%" height="100%" viewBox="-5 0 200 60"
-                                                    xml:space="preserve">
-                                                    <g fill="none" fill-rule="evenodd" stroke="currentColor"
-                                                        stroke-width="8" class="line">
-                                                        <path stroke-dashoffset="-500" stroke-dasharray="1000"
-                                                            d="M0,14.3l24.5,31.7L49,14.3l24.5,31.7L98,14.3l24.5,31.7 L147,14.3l24.5,31.7" />
-                                                    </g>
-                                                </svg>
-                                            </div>
-                                            <p class="wow textLeft" data-wow-delay=".15s">Our wide range of services includes everything and anything your brand needs to make the right impact. It all starts with a meticulously stitched-together strategy by our crew which suits your brand.
+                                        <div class="col-xs-12 col-md-6 col-lg-7 ">
+                                            <p  class="ser wow textLeft" data-wow-delay=".15s">
+                                                Our wide range of services includes everything and anything your brand needs to make the right impact. It all starts with a meticulously stitched-together strategy by our crew which suits your brand.
                                             </p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                            <!-- <div class="box">
+                                <h2 class="wrapped-heading">
+                                    <span class="wow textLeft">service</span>
+                                    <span class="wow textLeft" data-wow-delay=".1s">vic</span>
+                                    <span class="wow textLeft" data-wow-delay=".2s">es</span>
+                                </h2>
+                            </div> -->
                             <div class="row">
-                                <div class="col-md-12 col-lg-7 col-lg-offset-5">
+                                <div class="col-md-12 col-lg-7 serv" class="serv">
                                     <div class="row top-xs">
                                         <div class="col-xs-12 col-sm-6 col-md-3 col-lg-6">
-                                            <h4 class="wow textLeft">Paid Ads</h4>
+                                            <h4 class="wow textLeft"> Advertising </h4>
                                             <ul class="wow textLeft">
-                                                <li>Meta Ads</li>
-                                                <li>Google Ads</li>
-                                                <li>Snapchat Ads</li>
-                                                <li>LinkedIn Ads</li>
-                                                <li>Twitter Ads</li>
-                                                <li>Quora Ads</li>
+                                                <li>Creative Concept Development</li>
+                                                <li>Brand Strategy</li>
+                                                <li>Campaign Planning and Execution</li>
+                                                <li>Digital Marketing</li>
+                                                <li>Print Advertising</li>
                                             </ul>
                                         </div>
                                         <div class="col-xs-12 col-sm-6 col-md-3 col-lg-6">
-                                            <h4 class="wow textLeft">Social Media and Design</h4>
+                                            <h4 class="wow textLeft">Film Production</h4>
                                             <ul class="wow textLeft">
-                                                <li>Social media handling</li>
-                                                <li>Graphic Designing</li>
-                                                <li>Video Editing</li>
-                                                <li>Logo Designing</li>
-                                                <li>Film making and Photography</li>
+                                                <li>Scriptwriting</li>
+                                                <li>Pre-Production</li>
+                                                <li>Production</li>
+                                                <li>Post-Production</li>
+                                                <li>Music Videos</li>
                                             </ul>
                                         </div>
-                                        <div class="col-xs-12 col-sm-6 col-md-3 col-lg-6">
-                                            <h4 class="wow textLeft">Media and Production</h4>
-                                            <ul class="wow textLeft">
-                                                <li>Advertisements</li>
-                                                <li>Video Production</li>
-                                                <li>Script Writing</li>
-                                                <li>Photography</li>
-                                                <li>Content Planning</li>
-                                            </ul>
-                                        </div>
-                                        <div class="col-xs-12 col-sm-6 col-md-3 col-lg-6">
-                                            <h4 class="wow textLeft">SEO</h4>
-                                            <ul class="wow textLeft">
-                                                <li>On-page SEO</li>
-                                                <li>Off-page SEO</li>
-                                                <li>Content and Blogs</li>
-                                                <li>Advanced SEO</li>
-                                            </ul>
-                                        </div>
-                                        <div class="col-xs-12 col-sm-6 col-md-3 col-lg-6">
-                                            <h4 class="wow textLeft">Growth</h4>
-                                            <ul class="wow textLeft">
-                                                <li>Omnichannel Customer Engagement</li>
-                                                <li>Influencer Marketing</li>
-                                                <li>Marketing Strategy</li>
-                                                <li>Email Marketing</li>
-                                                <li>WhatsApp Marketing</li>
-                                            </ul>
-                                        </div>
-                                        <div class="col-xs-12 col-sm-6 col-md-3 col-lg-6">
-                                            <h4 class="wow textLeft">Software Development</h4>
-                                            <ul class="wow textLeft">
-                                                <li>Websites</li>
-                                                <li>Apps</li>
-                                                <li>Plugins and Customizations</li>
-                                            </ul>
-                                        </div>
+                                        
                                     </div>
                                     <div class="row">
                                         <div class="col-md-6 col-md-offset-6 col-sm-6 col-sm-offset-6">
@@ -427,258 +1185,175 @@
                                                 <div class="circle circle-20 wow fadeIn" data-wow-delay=".3s"
                                                     style="transform:translateX(108px) translateY(104px);"></div>
                                                 <a class="bs-button button wow matrixWide" data-wow-delay=".15s"
-                                                    href="contact.html" style="color: #101010;"><span data-hover="Get Started">Get
+                                                    href="#" style="color: #101010;"><span data-hover="Get Started">Get
                                                         Started</span></a>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <!-- <div class="row culture-wrap">
-                                <div class="svg-shape">
-                                    <div class="wow fadeIn" data-wow-delay=".3s">
-                                        <svg width="100%" height="100%" viewBox="0 0 120 120">
-                                          <g fill="none" fill-rule="evenodd" stroke="currentColor" stroke-width="10" class="line">
-                                            <path stroke-dashoffset="-500" stroke-dasharray="1000" d="M20,60a40,40 0 1,0 80,0a40,40 0 1,0 -80,0"></path>
-                                          </g>
-                                        </svg>
-                                    </div>
-                                </div>
-                                <div class="col-xs-12">
-                                    <div class="row">
-                                        <div class="col-xs-12">
-                                            <div class="box">
-                                                <h2 class="wrapped-heading">
-                                                    <span class="wow textLeft">cul</span><span class="wow textLeft" data-wow-delay=".2s">ture<b>.</b></span>
-                                                </h2>
-                                            </div>
-                                        </div>
-                                        <div class="col-xs-12 col-md-8 col-md-offset-2">
-                                            <p class="box wow textLeft big" data-wow-delay=".2s">Design, develop, deploy, optimize and iterate. That’s not just our process, it’s our philosophy. We've got big-business backgrounds with twice the ground speed and much better jokes. Technology is advancing exponentially, so why would we stay still?</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div> -->
+                
                         </div>
                     </div>
 
                 </div>
-                <!-- CULTURE -->
-                <!-- <div id="culture" style="background-color: #101010;">
-                    <div class="grid-wrap" style="background-color: #101010;">
-                        <div class="row middle-xs">
-                            <div class="col-xs-12 col-md-4">
-                                <div class="box">
-                                    <figure class="culture-img">
-                                        <div class="wow imgMatrix" data-wow-delay=".15s">
-                                            <img class="wow fadeIn" data-wow-delay=".45s"
-                                                src="img/studio/ritvik.jpg" alt="An awesome picture">
-                                        </div>
-                                    </figure>
-                                </div>
-                            </div>
-                            <div class="col-xs-12 col-md-7 col-md-offset-1">
-                                <div class="box">
-                                    <figure class="culture-img">
-                                        <div class="wow imgMatrix" data-wow-delay=".2s">
-                                            <img class="wow fadeIn" data-wow-delay=".5s"
-                                                src="img/studio/whiteboard-session-1x1.jpg" alt="An awesome picture">
-                                        </div>
-                                    </figure>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div> -->
+                
+               
             </div>
-
-            <!-- APPROACH -->
-            <!-- <div id="approach" style="background-color: #101010;">
-                <div class="svg-shape" style="color: white;">
-                    <div class="wow fadeIn" data-wow-delay=".3s">
-                        <svg width="100%" height="100%" viewBox="0 0 120 120">
-                            <g fill="none" fill-rule="evenodd" stroke="currentColor" stroke-width="10" class="line">
-                                <path stroke-dashoffset="-500" stroke-dasharray="1000"
-                                    d="M20,60a40,40 0 1,0 80,0a40,40 0 1,0 -80,0"></path>
-                            </g>
-                        </svg>
-                    </div>
-                </div>
-                <div class="grid-wrap">
-                    <div class="offset-top-sm">
-                        <div class="row">
-                            <div class="col-xs-12">
-                                <div class="row bottom-xs">
-                                    <div class="col-xs-12 col-sm-6 col-md-5 col-lg-4">
-                                        <div class="box">
-                                            <h2 class="wrapped-heading" style="color: white;">
-                                                <span class="wow textLeft">app</span>
-                                                <span class="wow textLeft" data-wow-delay=".1s">roa</span>
-                                                <span class="wow textLeft" data-wow-delay=".2s">ch<b style="background-color: white;">.</b></span>
-                                            </h2>
-                                        </div>
-                                    </div>
-                                    <div class="approach-desc col-xs-12 col-md-6 col-md-offset-1 col-lg-offset-2" style="color: white;">
-                                        <p class="box wow textLeft" data-wow-delay=".15s">
-                                            We truly invest ourselves in the brands we work with. We follow a simple approach to stitch a customized solution because your brand is unique for us and so is our solution for you.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-sm-12 col-md-4">
-                                <div class="approach-item center wow textLeft">
-                                    <span class="approach-icon">
-                                        <img data-alt-src="img/approach/icon-design.gif"
-                                            src="img/approach/icon-design.png" alt="Talk">
-                                    </span>
-                                    <div class="approach-title">
-                                        <h3><sup>01</sup>Strategize</h3>
-                                    </div>
-                                    <div class="approach-content">
-                                        <p>We sit with the founders and understand the vision of the brand, to align our marketing strategies accordingly. This includes understanding the low level business details, customer journey and the existing solutions in the market. We then meticulously craft a unique marketing plan aimed at achieving exponential growth.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-12 col-md-4">
-                                <div class="approach-item center wow textLeft">
-                                    <span class="approach-icon">
-                                        <img data-alt-src="img/approach/icon-develop.gif"
-                                            src="img/approach/icon-develop.png" alt="Talk">
-                                    </span>
-                                    <div class="approach-title">
-                                        <h3><sup>02</sup>Execute</h3>
-                                    </div>
-                                    <div class="approach-content">
-                                        <p>We execute it right. Our marketing team works with the brand's in-house team, to ensure every aspect is executed well.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-12 col-md-4">
-                                <div class="approach-item center wow textLeft">
-                                    <span class="approach-icon">
-                                        <img data-alt-src="img/approach/icon-deploy.gif"
-                                            src="img/approach/icon-deploy.png" alt="Talk">
-                                    </span>
-                                    <div class="approach-title">
-                                        <h3><sup>03</sup>Optimize</h3>
-                                    </div>
-                                    <div class="approach-content">
-                                        <p>We continuously analyze and enhance our marketing strategies, as we get more data on their performance.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
-
-            <!-- <br>
-            <br> -->
-
+  
             <!-- clients -->
-            <div id="clients" style="padding-top: 2rem;">
-                <div class="grid-wrap">
-                    <div class="offset-bottom-sm">
+            <div id="clients" style="padding-top: 2rem">
+                <div >
+                    <div>
                         <div class="row center-xs">
                             <header class="col-sm-12">
                                 <h2 class="wow textLeft">clients<b style="background-color: black;">.</b></h2>
                             </header>
                         </div>
-                        <div class="offset-bottom-sm">
+                        <div class="contas">
+                            <div class="wrapper">
+                                    <div class="scroll-contains">
+                                        <div class="scroll-contens">
+                                            <img src="./images/Logo/download (1).jpeg" alt="Placeholder 1">
+                                            <img src="./images/Logo/chokra_soap_logo-removebg-preview.png" alt="Placeholder 2">
+                                            <img src="./images/Logo/jai_bharat_steel_logo-removebg-preview.png" alt="Placeholder 3">
+                                            <img src="./images/Logo/kvs-premier-logo-removebg-preview.png" alt="Placeholder 4">
+                                            <img src="./images/Logo/marvel_logo-removebg-preview.png" alt="Placeholder 5">
+                                            <img src="./images/Logo/Raju_Supari_logo-removebg-preview.png" alt="Placeholder 5">
+                                            <img src="./images/Logo/springfit_logo-removebg-preview.png" alt="Placeholder 5">
+                                            <img src="./images/Logo/Sweety_Crush_logo-removebg-preview.png" alt="Placeholder 5">
+                                        </div>
+                                    </div>
+                                    </div>
+                                    </div>
+
+                        <!-- <div class="offset-bottom-sm">
                             <ul class="row around-xs middle-xs">
                                 <li class="col-xs-6 col-md-3 wow imgMatrix" data-wow-delay=".1s">
-                                    <img src="img/clients/makemytrip.png" alt="">
+                                    <img src="./images/Logo/download (1).jpeg" alt="">
                                 </li>
                                 <li class="col-xs-6 col-md-3 wow imgMatrix" data-wow-delay=".1s">
-                                    <img src="img/clients/wwf.png" alt="">
+                                    <img src="./images/Logo/chokra_soap_logo-removebg-preview.png" alt="">
                                 </li>
                                 <li class="col-xs-6 col-md-3 wow imgMatrix" data-wow-delay=".1s">
-                                    <img src="img/clients/fyk.png" alt="">
+                                    <img src="./images/Logo/jai_bharat_steel_logo-removebg-preview.png" alt="">
                                 </li>
                                 <li class="col-xs-6 col-md-3 wow imgMatrix" data-wow-delay=".1s">
-                                    <img src="img/clients/acciojob.jpg" alt="">
+                                    <img src="./images/Logo/kvs-premier-logo-removebg-preview.png" alt="">
                                 </li>
                                 <li class="col-xs-6 col-md-3 wow imgMatrix" data-wow-delay=".1s">
-                                    <img src="img/clients/silverishq.webp" alt="">
+                                    <img src="./images/Logo/marvel_logo-removebg-preview.png" alt="">
                                 </li>
                                 <li class="col-xs-6 col-md-3 wow imgMatrix" data-wow-delay=".1s">
 
-                                    <img src="img/HighAdventureLogo.jpg" alt="">
+                                    <img src="./images/Logo/Raju_Supari_logo-removebg-preview.png" alt="">
                                 </li>
                                 <li class="col-xs-6 col-md-3 wow imgMatrix" data-wow-delay=".1s">
-                                    <img src="img/AishaCircle.png" alt="">
+                                    <img src="./images/Logo/springfit_logo-removebg-preview.png" alt="">
                                 </li>
                                 <li class=" col-xs-6 col-md-3 wow imgMatrix" data-wow-delay=".1s">
-
-                                    <img src="img/DesichainLogo.jpg" alt="">
-                                </li>
-                                <li class="col-xs-6 col-md-3 wow imgMatrix" data-wow-delay=".1s">
-
-                                    <img src="img/Enzia%20Ventures.png" alt="">
-                                </li>
-                                <li class="col-xs-6 col-md-3 wow imgMatrix" data-wow-delay=".1s">
-
-                                    <img src="img/Taste_of_manali__2_-removebg-preview.png" alt="">
-                                </li>
-                                <li class="col-xs-6 col-md-3 wow imgMatrix" data-wow-delay=".1s">
-
-                                    <img src="img/logo-cogap-170x0.png" alt="">
-                                </li>
-                                <li class="col-xs-6 col-md-3 wow imgMatrix" data-wow-delay=".1s">
-
-                                    <img src="img/CartNYou-removebg-preview.png" alt="">
-                                </li>
-
-                                <li class="col-xs-6 col-md-3 wow imgMatrix" data-wow-delay=".1s">
-
-                                    <img src="img/OPA.png" alt="">
-                                </li>
-                                <li class="col-xs-6 col-md-3 wow imgMatrix" data-wow-delay=".1s">
-
-                                    <img src="img/OPD%20Easy%20Logo%20(3).png" alt="">
-                                </li>
-                                <li class="col-xs-6 col-md-3 wow imgMatrix" data-wow-delay=".1s">
-
-                                    <img src="img/NatureVilasGolden.svg" alt="">
-                                </li>
-                                <li class="col-xs-6 col-md-3 wow imgMatrix" data-wow-delay=".1s">
-
-                                    <img src="img/KubeEarthLogo.png" alt="">
-                                </li>
-                                <li class="col-xs-6 col-md-3 wow imgMatrix" data-wow-delay=".2s">
-
-                                    <img src="img/earthlyTribeLogo.png" alt="Bareburger">
-                                </li>
-                                <li class="col-xs-6 col-md-3 wow imgMatrix" data-wow-delay=".3s">
-                                    <img src="img/MAD.png" alt="Betches">
-                                </li>
-                                <li class="col-xs-6 col-md-3 wow imgMatrix" data-wow-delay=".4s">
-                                    <img src="img/IMUPRO.png" alt="Story and Verse">
+                                    <img src="./images/Logo/Sweety_Crush_logo-removebg-preview.png" alt="">
                                 </li>
                             </ul>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
 
+
+
+        <!-- cardscroll -->
+        <div id="container">
+            <div id="slider-container">
+              <span onclick="slideRight()" class="btn"></span>
+                <div id="sliders">
+                  <div class="slides"><span> 
+                     <img src = "./images/BannerImages/BlueLine.jpg" class="imgs"/></span></div>
+                  <div class="slides"><span> 
+                     <img src = "./images/WhatsApp Image 2024-08-18 at 12.38.26_97a7c8a2.jpg" class="imgs" /></span></div>
+                  <div class="slides">
+                <span>  <img src = "./images/WhatsApp Image 2024-08-18 at 12.38.27_0496670c.jpg" class="imgs" /><span></div>
+                  <div class="slides">
+                    <span>  <img src = "./images/BannerImages/Kvs Premier.jpg" class="imgs" /></span></div>
+                  <div class="slides">
+                    <span>  <img src = "./images/WhatsApp Image 2024-08-18 at 12.38.27_5ae642b5.jpg" class="imgs" /></span></div>
+                  <div class="slides">
+                    <span>  <img src = "./images/BannerImages/Raju Supari.jpg" class="imgs" /></span></div>
+                  <!-- <div class="slides">
+                    <span> 
+                         <img src = "./images/WhatsApp Image 2024-08-18 at 12.38.27_6467feb8.jpg"  class="imgs"/></span>
+                        </div> -->
+              <div class="slides">
+                <span>  <img src = "./images/WhatsApp Image 2024-08-18 at 12.38.27_ec7e4c81.jpg"  class="imgs"/></span>
+            </div>
+          <div class="slides">
+            <span>  <img src = "./images/WhatsApp Image 2024-08-18 at 12.38.28_75b10a75.jpg"  class="imgs"/></span></div>
+      <div class="slides">
+        <span>  <img src = "./images/WhatsApp Image 2024-08-18 at 12.38.28_c1366e40.jpg"  class="imgs"/></span></div>
+  </div>
+              <span onclick="slideLeft()" class="btn"></span>
+            </div>
+          </div>
+                <!-- <div id="clients" style="padding-top: 2rem; padding-bottom: 5rem;">
+                        <div>
+                            <div class="row center-xs">
+                                <header class="col-sm-12">
+                                    <h2 class="wow textLeft">testimonals<b style="background-color: black;">.</b></h2>
+                                </header>
+                            </div>
+                            <div class= "test">
+                                <div class="swiper-container">
+                                  <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                         <p class="sliders" style="color: black;">
+                            <span>Working with Bijan Ads & Films was a game-changer for our brand. Their creative vision and attention to detail helped us stand out in a crowded market. Highly recommend their services!</span></p>
+                            <h5> <span>---Vidhi Bajaj</span></h5>
+                        </div>
+                        <div class="swiper-slide">
+                             <p class="sliders" style="color: black;">
+                            <span style="color: black;">Bijan Ads & Films brought our brand story to life in a way we never imagined. Their team is professional, talented, and truly understands the power of visual storytelling.</span></p>
+                            <h5> <span>---Vidhi Bajaj</span></h5>
+                        </div>
+                        <div class="swiper-slide">
+                           <p class="sliders" style="color: black;">
+                            <span style="color: black;">Team at Bijan Ads & Films exceeded our expectations. Their innovative approach to branding and motion graphics helped us connect with our audience on a deeper level. Exceptional work!</span></p>
+                          <h5> <span>---Vidhi Bajaj</span></h5>
+                        </div>
+                        <div class="swiper-slide">
+                           <p class="sliders" style="color: black;">
+                            <span style="color: black;">Bijan Ads & Films transformed our marketing strategy with their stunning visuals and creative concepts. Their work has been instrumental in boosting our brand's visibility and engagement.</span></p>
+                          <h5> <span>---Vidhi Bajaj</span></h5>
+                        </div>
+                        <div class="swiper-slide">
+                           <p class="sliders" style="color: black;">
+                            <span style="color: black;">The team at Bijan Ads & Films is incredibly talented and professional. They took our vision and turned it into a powerful brand narrative that resonates with our audience. We couldn't be happier with the results.</span></p>
+                          <h5> <span>---Vidhi Bajaj</span></h5>
+                        </div>
+                        <div class="swiper-slide">
+                          <p class="sliders" style="color: black;">
+                            <span style="color: black;">From start to finish, Bijan Ads & Films delivered exceptional service and creativity. Their unique approach to branding helped us establish a strong, memorable identity in the market.</span></p>
+                          <h5> <span>---Vidhi Bajaj</span></h5>
+                        </div>
+                      </div>
+                    </div>
+                    </div>
+            </div>
+        </div> -->
+    </div>   
+    </div>  
             <!-- APPLY -->
-            <div id="bottom-cta">
+            <!-- <div id="bottom-cta"> -->
                 <!-- <figure class="apply-img">
                     <img class="wow imgMatrix" src="img/studio/img-poster.png" alt="Success poster" style="width: 60%;">
                 </figure> -->
                 <div class="grid-wrap" style="background-color: #101010;">
-                    <div class="offset-top-sm">
+                    <div>
                         <div class="row">
                             <div class="col-md-12 col-lg-9 col-md-offset-0 col-lg-offset-1">
                                 <div class="box-wrap">
                                     <div class="row">
                                         <div class="col-sm-12">
-                                            <h2 class="wow textLeft" style="color: white;">let's</h2>
+                                            <h2 class="wow textLeft" style="color: white;">let's </h2>
                                         </div>
                                     </div>
                                     <div class="row top-xs">
@@ -737,7 +1412,7 @@
                                                     <div class="circle circle-20 wow fadeIn" data-wow-delay=".3s"
                                                         style="transform:translateX(108px) translateY(104px);"></div>
                                                     <a class="bs-button button wow matrixWide" data-wow-delay=".15s"
-                                                        href="contact.html"><span data-hover="contact us" style="color: black;">Get
+                                                        href="#"><span data-hover="contact us" style="color: black;">Get
                                                             Started</span></a>
                                                 </div>
                                             </div>
@@ -772,11 +1447,12 @@
             <p class="" style="text-align: center; color: white; font-size: 1.2rem;">
                 Contact us for more info:
                 <br>
-                <a href="tel:9315258399" style="color: white;">+91-9315258399</a> (Satwik)
+                <a href="tel:9315258399" style="color: white;">+91-7947145862</a>
                 <br>
-                <a href="tel:9999482734" style="color: white">+91-9999482734</a> (Ritvik)
-                <br><br>
-                <a href="mailto:crew@supercrew.club" style="color: white">crew@supercrew.club</a>
+                <!-- <a href="tel:9999482734" style="color: white">+91-9999482734</a> -->
+                <br>
+                <br>
+                <a href="mailto:Bijanadsandfilms@gmail.com" style="color: white">Bijanadsandfilms@gmail.com</a>
             </p>
         </footer>
     </div>
@@ -784,11 +1460,151 @@
     <!-- COPY THIS EVERYWHERE -->
     <div class="form-response js-form-response text-center"></div>
     <script src="js/main.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <!-- scripts -->
+    <script>
+        window.addEventListener('load', function () {
+            const preloader = document.getElementById('preloader');
+            const content = document.getElementById('content');
+    
+            setTimeout(() => {
+                preloader.style.display = 'none';
+            }, 2000);
+        });
+    </script>
+     <script>
+        var container = document.getElementById('container')
+var slider = document.getElementById('sliders');
+var slides = document.getElementsByClassName('slides').length;
+var buttons = document.getElementsByClassName('btn');
+
+
+var currentPosition = 0;
+var currentMargin = 0;
+var slidesPerPage = 0;
+var slidesCount = slides - slidesPerPage;
+var containerWidth = container.offsetWidth;
+var prevKeyActive = false;
+var nextKeyActive = true;
+
+window.addEventListener("resize", checkWidth);
+
+function checkWidth() {
+    containerWidth = container.offsetWidth;
+    setParams(containerWidth);
+}
+
+function setParams(w) {
+    if (w < 551) {
+        slidesPerPage = 1;
+    } else {
+        if (w < 901) {
+            slidesPerPage = 2;
+        } else {
+            if (w < 1101) {
+                slidesPerPage = 3;
+            } else {
+                slidesPerPage = 4;
+            }
+        }
+    }
+    slidesCount = slides - slidesPerPage;
+    if (currentPosition > slidesCount) {
+        currentPosition -= slidesPerPage;
+    };
+    currentMargin = - currentPosition * (100 / slidesPerPage);
+    slider.style.marginLeft = currentMargin + '%';
+    if (currentPosition > 0) {
+        buttons[0].classList.remove('inactive');
+    }
+    if (currentPosition < slidesCount) {
+        buttons[1].classList.remove('inactive');
+    }
+    if (currentPosition >= slidesCount) {
+        buttons[1].classList.add('inactive');
+    }
+}
+
+setParams();
+
+function slideRight() {
+    if (currentPosition != 0) {
+        slider.style.marginLeft = currentMargin + (100 / slidesPerPage) + '%';
+        currentMargin += (100 / slidesPerPage);
+        currentPosition--;
+    };
+    if (currentPosition === 0) {
+        buttons[0].classList.add('inactive');
+    }
+    if (currentPosition < slidesCount) {
+        buttons[1].classList.remove('inactive');
+    }
+};
+
+function slideLeft() {
+    if (currentPosition != slidesCount) {
+        slider.style.marginLeft = currentMargin - (100 / slidesPerPage) + '%';
+        currentMargin -= (100 / slidesPerPage);
+        currentPosition++;
+    };
+    if (currentPosition == slidesCount) {
+        buttons[1].classList.add('inactive');
+    }
+    if (currentPosition > 0) {
+        buttons[0].classList.remove('inactive');
+    }
+};
+     </script>
+     <script>
+        document.addEventListener('mousemove', function(e) {
+            const cursor = document.querySelector('.custom-cursor');
+            cursor.style.left = e.pageX + 'px';
+            cursor.style.top = e.pageY + 'px';
+        });
+     </script>
+     <script>
+     // VARIABLES
+const elH = document.querySelectorAll(".timeline li > div");
+
+// START
+window.addEventListener("load", init);
+
+function init() {
+  setEqualHeights(elH);
+}
+
+// SET EQUAL HEIGHTS
+function setEqualHeights(el) {
+  let counter = 0;
+  for (let i = 0; i < el.length; i++) {
+    const singleHeight = el[i].offsetHeight;
+
+    if (counter < singleHeight) {
+      counter = singleHeight;
+    }
+  }
+
+  for (let i = 0; i < el.length; i++) {
+    el[i].style.height = `${counter}px`;
+  }
+}
+</script>
+     <script>
+        var swiper = new Swiper('.swiper-container', {
+            pagination: '.swiper-pagination',
+            effect: 'coverflow',
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: 'auto',
+            coverflow: {
+              rotate: 50,
+              stretch: 0,
+              depth: 100,
+              modifier: 1,
+              slideShadows : true
+            },
+            loop: true
+          });
+     </script>
 </body>
-
-<!-- Mirrored from buzzworthystudio.com/studio by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 14 Sep 2020 13:10:04 GMT -->
-
-
-<!-- Mirrored from www.supercrew.club/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 01 Aug 2024 14:32:08 GMT -->
 </html>
