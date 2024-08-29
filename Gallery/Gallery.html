@@ -22,7 +22,199 @@
     
         <link href="../css/styles.css" rel="stylesheet" type="text/css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    
+    <style>
+        .pic{
+            margin-top: 120px;
+            margin-left: 50px;
+            margin-right: 50px;
+            position: relative;
+          }
+          .pic h3{
+            text-align: center;
+          }
+          #gallery {
+            margin-top: 12px;
+            display: grid;
+            height: calc(100vh - 10px);
+            grid-template-columns: repeat(6, 1fr);
+            grid-template-rows: repeat(6, 1fr);
+            grid-gap: 0.5em;
+          }
+          
+          @media (max-width: 800px) {
+            #gallery {
+              display: flex;
+              align-items: flex-start;
+              flex-wrap: wrap;
+              justify-content: center;
+            }
+            #gallery > div {
+              width: 48%;
+              margin: 1%;
+            }
+            @media (max-width: 350px) {
+              #gallery > div {
+                width: 98%;
+              }
+            }
+          }
+          
+          #gallery > div:nth-child(6n + 1) {
+            grid-column: span 2;
+            grid-row: span 2;
+          }
+          
+          #gallery > div:nth-child(2) {
+            grid-column: span 3;
+            grid-row: span 3;
+          }
+          
+          #gallery > div:nth-child(4) {
+            grid-column: span 1;
+            grid-row: span 2;
+          }
+          
+          #gallery > div > a {
+            opacity: 0;
+            position: absolute;
+            color: #000;
+            background-color: #000;
+            font: bold 4em "Helvetica";
+            text-shadow: 0 -1px 5px #fff, -1px 0px 5px #fff, 0 1px 5px #fff, 1px 0px 5px #fff;
+            padding: 2rem;
+            mix-blend-mode: difference;
+            width: 100%;
+            height: 100%;
+            transition: all ease 1s;
+          }
+          
+          #gallery > div > img {
+            width: 100%;
+            min-height: 100%;
+            transition: all ease 1s;
+          }
+          
+          #gallery > div:hover img {
+            filter: blur(4px);
+          }
+          
+          #gallery > div:hover a {
+            opacity: 1;
+          }
+          
+          #gallery > div {
+            overflow: hidden;
+            position: relative;
+            box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2), 0 3px 20px 0 rgba(0, 0, 0, 0.19);
+          }
+          
+          #gallery div,
+          #gallery a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+          }
+          
+          [id^="lightbox-"] {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: flex;
+            opacity: 0;
+            transition: opacity 450ms ease-in-out;
+            align-items: center;
+            justify-content: center;
+            pointer-events: none;
+          }
+          
+          [id^="lightbox-"]:target {
+            opacity: 1;
+            pointer-events: inherit;
+          }
+          
+          [id^="lightbox-"]:target img {
+            filter: blur(0);
+          }
+          
+          .lightbox .content {
+            max-width: 90%;
+            position: relative;
+            color: #fff;
+          }
+          
+          .lightbox .content:hover > a.close {
+            opacity: 1;
+            transform: scale(1, 1);
+          }
+          
+          .lightbox .content:hover > .title::after {
+            opacity: 1;
+          }
+          
+          .lightbox .content > * {
+            transition: all 450ms ease-in-out;
+          }
+          
+          .lightbox .title {
+            display: block;
+            margin: 0;
+            padding: 1em;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            transform: translateY(50%);
+            font-size: 1.5em;
+            opacity: 0;
+          }
+          
+          .lightbox .title::after {
+            content: ' ';
+            background-color: rgba(0, 0, 0, 0.4);
+            bottom: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            transition: all 350ms ease-in-out 250ms;
+            opacity: 0;
+            transform-origin: bottom;
+            mix-blend-mode: soft-light;
+          }
+          
+          .lightbox img {
+            max-height: 90vh;
+            max-width: 100%;
+            margin: 0;
+            padding: 0;
+            filter: blur(50px);
+          }
+          
+          .lightbox a.close {
+            width: 2em;
+            height: 2em;
+            position: absolute;
+            right: 0;
+            top: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transform: scale(0, 0);
+            opacity: 0;
+            transform-origin: right top;
+            text-decoration: none;
+            color: #fff;
+          }
+          
+          .lightbox a.close::after {
+            content: "X";
+          }
+          
+    </style>
 </head>
 <body>
     <div id="preloader">
@@ -104,6 +296,67 @@
         </div>
         </div> 
      <div>
+        <div class ="pic">
+            <h3>Our Gallery</h3>
+            <div id="gallery">
+                <div>
+                    <img src="../images/Blueline.png" alt="Image 512">
+                </div>
+                <div>
+                    <img src="../images/Marvel.png" alt="Image 513">
+                </div>
+                <div>
+                    <img src="../images/Raju.png" alt="Image 514">
+                </div>
+               <div>
+                    <img src="../images/Sleeper.png" alt="Image 516">
+                </div>
+              
+               <div>
+                    <img src="../images/Sweety.png" alt="Image 516">
+                </div>
+               <div>
+                    <img src="../images/Sweety pan.png" alt="Image 517">
+                </div>
+               <div>
+                    <img src="../images/WhatsApp Image 2024-08-18 at 12.38.26_97a7c8a2.jpg" alt="Image 518">
+                </div>
+               <div>
+                    <img src="../images/Logo/jai_bharat_steel_logo-removebg-preview.png" alt="Image 519">
+                </div>
+               <div>
+                    <img src="../images/Logo/chokra_soap_logo-removebg-preview.png" alt="Image 520">
+                </div>
+               <div>
+                    <img src="../images/Logo/marvel_logo-removebg-preview.png" alt="Image 521">
+                </div>
+               <div>
+                    <img src="../images/Logo/download (1).jpeg" alt="Image 522">
+                </div>
+               <div>
+                    <img src="../images/Logo/springfit_logo-removebg-preview.png" alt="Image 523">
+                </div>
+               <div>
+                    <img src="../images/WhatsApp Image 2024-08-18 at 12.38.28_c1366e40.jpg" alt="Image 524">
+                </div>
+               <div>
+                    <img src="../images/Logo/kvs-premier-logo-removebg-preview.png" alt="Image 525">
+                </div>
+               <div>
+                    <img src="../images/Logo/Sweety_Crush_logo-removebg-preview.png" alt="Image 526">
+                </div>
+               <div>
+                    <img src="../images/Logo/Raju_Supari_logo-removebg-preview.png" alt="Image 528">
+                </div>
+               <div>
+                    <img src="../images/Raju.png" alt="Image 514">
+                </div>
+                <div>
+                    <img src="../images/Sweety.png" alt="Image 514">
+                </div>
+            </div>
+              </div>
+            
         <script src="../js/js-dist.js"></script>
         <div class="form-response js-form-response text-center"></div>
         <div class="form-response js-form-response text-center"></div> 

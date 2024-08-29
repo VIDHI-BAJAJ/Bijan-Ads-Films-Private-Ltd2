@@ -22,7 +22,185 @@
     
         <link href="../css/styles.css" rel="stylesheet" type="text/css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    
+    <style>
+        .testimonial-section {
+            text-align: center;
+            background-color: #000;
+            color: #fff;
+            margin-top: 120px;
+            padding: 0;
+        }
+        .testimonial-section  h4{
+            text-align: left;
+            color: #333;
+            font-size: 32px;
+            margin: 12px;
+            margin-top: 25px;
+        }
+        .testimonial-section h2 {
+            font-size: 2.0em;
+            padding-top: 20px;
+            margin-bottom: 30px;
+            color: #fff;
+        }
+        
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin: 25px;
+            padding-bottom: 30px;
+        }
+        
+        .testimonial-card {
+            background-color: #111;
+            padding: 20px;
+            border-radius: 10px;
+            position: relative;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s ease;
+            border: 2px solid white;
+        }
+        
+        .testimonial-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .stars {
+            color: #f5a623;
+            font-size: 1.2em;
+            margin-bottom: 15px;
+        }
+        
+        .testimonial-card p {
+            font-size: 0.9em;
+            color: #ddd;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+        
+        .client-info {
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+        }
+        
+        .client-info img {
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+        }
+        
+        .client-info h4 {
+            margin: 0;
+            font-size: 1em;
+            color: #fff;
+        }
+        
+        .client-info span {
+            display: block;
+            font-size: 0.8em;
+            color: #aaa;
+        }
+        
+        .quote-mark {
+            position: absolute;
+            bottom: 10px;
+            right: 20px;
+            font-size: 4em;
+            color: #333;
+        }
+        .faq{
+          background-color: #fff;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          margin: 50px 0;
+        }
+        
+        .wrapper {
+          width: 100%;
+        }
+        
+        h1 {
+          margin-bottom: 20px;
+        }
+        .container {
+          background-color: white;
+          color: black;
+          border-radius: 20px;
+          box-shadow: 0 5px 10px 0 rgb(0,0,0,0.25);
+          margin: 20px 20px 20px 70px;
+        }
+        
+        .question {
+          font-size: 1.2rem;
+          font-weight: 500;
+          padding: 20px 80px 20px 20px;
+          position: relative;
+          display: flex;
+          align-items: center;
+          cursor: pointer;
+        }
+        
+        .question::after {
+          content: "\002B";
+          font-size: 2.2rem;
+          position: absolute;
+          right: 20px;
+          transition: 0.2s;
+        }
+        
+        .question.active::after {
+          transform: rotate(45deg);
+        }
+        
+        .answercont {
+          max-height: 0;
+          overflow: hidden;
+          transition: 0.3s;
+        }
+        
+        .answer {
+            font-size: 20px;
+          padding: 0 20px 20px;
+          line-height: 2.0rem;
+        }
+        
+        @media screen and (max-width: 790px){
+          html {
+            font-size: 14px;
+          }
+          .wrapper {
+          width: 80%;
+        }
+        }
+        .about-content{
+            display: flex;
+            align-items: flex-start;
+            margin: 20px 0;
+        }
+        
+        .about-content h3{
+            flex-basis: 40%;
+    color: #fff;
+    margin-top: 40px;
+    font-size: 30px;
+            
+        }
+        
+        .about-content p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #fff;
+            flex-basis: 75%;
+            text-align: justify;
+            margin-right: 50px;
+        }
+        
+    </style>
 </head>
 <body>
     <div id="preloader">
@@ -104,6 +282,201 @@
         </div>
         </div> 
      <div>
+        
+    <section class="testimonial-section">
+        <div class="about-content">
+            <h3>What Our Clients Says</h3>
+           <p>Their expertise in creating visually stunning content, paired with a deep understanding of storytelling, ensures that every project not only captivates the audience but also delivers the brand’s message with precision. The team’s dedication to quality and creativity makes them an invaluable partner for any business looking to elevate their media presence.</p>
+        </div>
+        <!-- <h2>What Our Client Says</h2> -->
+        <div class="testimonials-grid">
+            <div class="testimonial-card">
+                <div class="stars">★★★★★</div>
+                <p>Mauris dolor nulla, pretium quis leo non, varius consectetur nibh. Quisque gravida eros sed efficitur posuere. Morbi molestie, dui ac tristique imperdiet, dolor velit porttitor nisl, nec molestie erat elit vel diam.</p>
+                <div class="client-info">
+                    <img src="client1.jpg" alt="James Ribbon">
+                    <div>
+                        <h4>James Ribbon</h4>
+                        <span>Client Job</span>
+                    </div>
+                </div>
+                <div class="quote-mark">❞</div>
+            </div>
+            <div class="testimonial-card">
+                <div class="stars">★★★★★</div>
+                <p>Mauris dolor nulla, pretium quis leo non, varius consectetur nibh. Quisque gravida eros sed efficitur posuere. Morbi molestie, dui ac tristique imperdiet, dolor velit porttitor nisl, nec molestie erat elit vel diam.</p>
+                <div class="client-info">
+                    <img src="client1.jpg" alt="James Ribbon">
+                    <div>
+                        <h4>James Ribbon</h4>
+                        <span>Client Job</span>
+                    </div>
+                </div>
+                <div class="quote-mark">❞</div>
+            </div>
+            <div class="testimonial-card">
+                <div class="stars">★★★★★</div>
+                <p>Mauris dolor nulla, pretium quis leo non, varius consectetur nibh. Quisque gravida eros sed efficitur posuere. Morbi molestie, dui ac tristique imperdiet, dolor velit porttitor nisl, nec molestie erat elit vel diam.</p>
+                <div class="client-info">
+                    <img src="client1.jpg" alt="James Ribbon">
+                    <div>
+                        <h4>James Ribbon</h4>
+                        <span>Client Job</span>
+                    </div>
+                </div>
+                <div class="quote-mark">❞</div>
+            </div>
+            <!-- Additional testimonials here -->
+             <div class="testimonial-card">
+                <div class="stars">★★★★★</div>
+                <p>Mauris dolor nulla, pretium quis leo non, varius consectetur nibh. Quisque gravida eros sed efficitur posuere. Morbi molestie, dui ac tristique imperdiet, dolor velit porttitor nisl, nec molestie erat elit vel diam.</p>
+                <div class="client-info">
+                    <img src="client1.jpg" alt="James Ribbon">
+                    <div>
+                        <h4>James Ribbon</h4>
+                        <span>Client Job</span>
+                    </div>
+                </div>
+                <div class="quote-mark">❞</div>
+            </div>
+             <div class="testimonial-card">
+                <div class="stars">★★★★★</div>
+                <p>Mauris dolor nulla, pretium quis leo non, varius consectetur nibh. Quisque gravida eros sed efficitur posuere. Morbi molestie, dui ac tristique imperdiet, dolor velit porttitor nisl, nec molestie erat elit vel diam.</p>
+                <div class="client-info">
+                    <img src="client1.jpg" alt="James Ribbon">
+                    <div>
+                        <h4>James Ribbon</h4>
+                        <span>Client Job</span>
+                    </div>
+                </div>
+                <div class="quote-mark">❞</div>
+            </div>
+             <div class="testimonial-card">
+                <div class="stars">★★★★★</div>
+                <p>Mauris dolor nulla, pretium quis leo non, varius consectetur nibh. Quisque gravida eros sed efficitur posuere. Morbi molestie, dui ac tristique imperdiet, dolor velit porttitor nisl, nec molestie erat elit vel diam.</p>
+                <div class="client-info">
+                    <img src="client1.jpg" alt="James Ribbon">
+                    <div>
+                        <h4>James Ribbon</h4>
+                        <span>Client Job</span>
+                    </div>
+                </div>
+                <div class="quote-mark">❞</div>
+            </div>
+             <div class="testimonial-card">
+                <div class="stars">★★★★★</div>
+                <p>Mauris dolor nulla, pretium quis leo non, varius consectetur nibh. Quisque gravida eros sed efficitur posuere. Morbi molestie, dui ac tristique imperdiet, dolor velit porttitor nisl, nec molestie erat elit vel diam.</p>
+                <div class="client-info">
+                    <img src="client1.jpg" alt="James Ribbon">
+                    <div>
+                        <h4>James Ribbon</h4>
+                        <span>Client Job</span>
+                    </div>
+                </div>
+                <div class="quote-mark">❞</div>
+            </div>
+           <div class="testimonial-card">
+                <div class="stars">★★★★★</div>
+                <p>Mauris dolor nulla, pretium quis leo non, varius consectetur nibh. Quisque gravida eros sed efficitur posuere. Morbi molestie, dui ac tristique imperdiet, dolor velit porttitor nisl, nec molestie erat elit vel diam.</p>
+                <div class="client-info">
+                    <img src="client1.jpg" alt="James Ribbon">
+                    <div>
+                        <h4>James Ribbon</h4>
+                        <span>Client Job</span>
+                    </div>
+                </div>
+                <div class="quote-mark">❞</div>
+            </div>
+             <div class="testimonial-card">
+                <div class="stars">★★★★★</div>
+                <p>Mauris dolor nulla, pretium quis leo non, varius consectetur nibh. Quisque gravida eros sed efficitur posuere. Morbi molestie, dui ac tristique imperdiet, dolor velit porttitor nisl, nec molestie erat elit vel diam.</p>
+                <div class="client-info">
+                    <img src="client1.jpg" alt="James Ribbon">
+                    <div>
+                        <h4>James Ribbon</h4>
+                        <span>Client Job</span>
+                    </div>
+                </div>
+                <div class="quote-mark">❞</div>
+            </div>
+          
+        </div>
+    </section>
+  <section class ="faq">
+<h1>FAQs</h1>
+<div class="wrapper"> 
+  <div class ="faqanswer">
+  <div class="container">
+    <div class="question">
+        What services does Bijan ADS & Films PVT Limited offer?
+    </div>
+    <div class="answercont">
+      <div class="answer">
+        Bijan ADS & Films provides a comprehensive range of services including advertising campaigns, film production, video editing, animation, and promotional content creation for various media platforms.    
+</div>
+    </div>
+  </div> 
+    <div class="container">
+    <div class="question">
+        What industries does Bijan ADS & Films specialize in?
+    </div>
+    <div class="answercont">
+      <div class="answer">
+        We work with a diverse range of industries including entertainment, fashion, technology, healthcare, and consumer goods, tailoring our services to meet the unique needs of each sector.
+</div>
+    </div>
+  </div>
+  </div>
+   <div class ="faqanswer">    
+  <div class="container">
+    <div class="question">
+        Can Bijan ADS & Films handle both large-scale and small-scale projects? 
+    </div>
+    <div class="answercont">
+      <div class="answer">
+        Yes, we have the capability to manage projects of all sizes, from high-budget film productions to smaller advertising campaigns, ensuring the same level of quality and attention to detail in every project.  
+</div>
+    </div>
+  </div>
+ 
+  <div class="container">
+    <div class="question">
+        How does Bijan ADS & Films ensure high-quality production?
+    </div>
+    <div class="answercont">
+      <div class="answer">
+        We combine state-of-the-art technology with a team of experienced professionals in directing, cinematography, editing, and visual effects to deliver top-tier production quality for all our projects.
+      </div>
+    </div>
+  </div>
+  </div>
+    <div class ="faqanswer">
+  <div class="container">
+    <div class="question">
+        What is the typical timeline for completing a project with Bijan ADS & Films? 
+    </div>
+    <div class="answercont">
+      <div class="answer">
+        The timeline varies depending on the scope and complexity of the project. We work closely with clients to establish realistic deadlines and ensure timely delivery without compromising on quality. 
+</div>
+    </div>
+  </div>
+       <div class="container">
+    <div class="question">
+        How can I get a quote for my project with Bijan ADS & Films?
+    </div>
+    <div class="answercont">
+      <div class="answer">
+        To get a quote, you can contact us through our website or reach out directly via email or phone. We’ll discuss your project’s requirements and provide a detailed estimate based on your specific needs.
+</div>
+    </div>
+  </div>
+  </div>
+</div>
+</section>
+
+<script src="https://storage.ko-fi.com/cdn/scripts/overlay-widget.js"></script>
+
         <script src="../js/js-dist.js"></script>
         <div class="form-response js-form-response text-center"></div>
         <div class="form-response js-form-response text-center"></div> 
@@ -117,6 +490,27 @@
                     preloader.style.display = 'none';
                 }, 2000);
             });
+        </script>
+        <script>
+            let question = document.querySelectorAll(".question");
+
+question.forEach(question => {
+  question.addEventListener("click", event => {
+    const active = document.querySelector(".question.active");
+    if(active && active !== question ) {
+      active.classList.toggle("active");
+      active.nextElementSibling.style.maxHeight = 0;
+    }
+    question.classList.toggle("active");
+    const answer = question.nextElementSibling;
+    if(question.classList.contains("active")){
+      answer.style.maxHeight = answer.scrollHeight + "px";
+    } else {
+      answer.style.maxHeight = 0;
+    }
+  })
+})
+
         </script>
 </body>
 </html>
